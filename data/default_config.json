@@ -1,0 +1,28 @@
+{
+  "max_turns": 10,
+  "strip_thinking_content": true,
+  "aggregation_method": "average",
+  "seed_generator_model": {
+    "model": "claude-sonnet-5-bedrock"
+  },
+  "analyzer_model": {
+    "model_id": "global.anthropic.claude-opus-4-8",
+    "provider": "bedrock",
+    "max_tokens": 32768
+  },
+  "assistant_agent": [
+    {"model": {"model": "claude-sonnet-5-bedrock"}, "prompt": "default_prompt", "agent_class": "default", "label": "Sonnet 5"},
+    {"model": {"model": "claude-haiku-4.5-bedrock"}, "prompt": "default_prompt", "agent_class": "default", "label": "Haiku 4.5"}
+  ],
+  "user_agent": [
+    {"model": {"model": "claude-sonnet-5-bedrock"}, "prompt": "default_prompt", "agent_class": "default"}
+  ],
+  "evaluator_model": [
+    {"model": "claude-opus-4.8-bedrock"}
+  ],
+  "sandbox_model": {
+    "model_id": "global.anthropic.claude-sonnet-5",
+    "provider": "bedrock",
+    "max_tokens": 8192
+  }
+}

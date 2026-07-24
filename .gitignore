@@ -1,0 +1,82 @@
+# Environment files (contain secrets)
+.env
+.env.local
+.env.*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Output files
+*.json.output
+results/
+output/
+*.log
+
+# Credentials and keys
+*.pem
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build output
+build
+
+# Local cache directory
+/.hatch
+
+# Generated build files
+coverage.xml
+requirements/
+
+# Benchmark run data
+data/benchmark_*.json
+
+# Internal working directory (not part of the release)
+internal/

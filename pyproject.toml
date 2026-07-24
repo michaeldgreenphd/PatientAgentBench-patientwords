@@ -1,0 +1,99 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "patient-agent-bench"
+version = "0.1.0"
+description = "PatientAgentBench: A Benchmark Framework for Evaluating Patient-Facing Health AI Agents"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "CC-BY-NC-4.0"}
+authors = [
+    {name = "PatientAgentBench contributors"}
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "langchain>=0.3.0",
+    "langchain-aws>=0.2.0",
+    "langchain-openai>=0.3.0",
+    "langchain-anthropic>=0.3.0",
+    "langgraph>=0.2.0",
+    "boto3>=1.34.0",
+    "httpx>=0.27.0",  # SigV4-signed requests to the Bedrock Mantle gateway
+    "pydantic>=2.0.0",
+    "python-dotenv>=1.0.0",
+    "numpy>=1.24.0,<2.0.0",  # Pin to avoid build issues
+    "tiktoken==0.8.0",  # Pin to version with pre-built wheels
+    "matplotlib>=3.7.0,<3.10.0",  # <3.10: 3.10+ aarch64 wheels need glibc 2.27, AL2 has 2.26
+    "seaborn>=0.12.0,<1.0.0",  # Pin to versions with pre-built wheels
+    "contourpy>=1.0.1,<1.3.0",  # <1.3: 1.3+ aarch64 wheels need glibc 2.27
+    "pillow>=10.0.0,<12.3.0",  # <12.3: 12.3.0 ships no AL2_x86_64 wheel -> source build needs libjpeg; via matplotlib
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+    "pytest-cov>=4.0.0",
+    "hypothesis>=6.0.0,<=6.155.2",
+    "black>=23.0.0",
+    "ruff>=0.1.0",
+    "mypy>=1.0.0",
+]
+
+[project.scripts]
+patient-agent-bench = "patient_agent_bench.run:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/patient_agent_bench"]
+
+[tool.black]
+line-length = 100
+target-version = ["py311"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.mypy]
+python_version = "3.11"
+warn_return_any = true
+warn_unused_configs = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = "-v --tb=short -ra"
+asyncio_mode = "auto"
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore::PendingDeprecationWarning",
+]
+markers = [
+    "unit: Unit tests (fast, no external dependencies)",
+    "integration: Integration tests (may require AWS mocks)",
+    "slow: Slow tests (skip with -m 'not slow')",
+]
+
+[tool.coverage.run]
+source = ["src/patient_agent_bench"]
+branch = true
+omit = ["*/tests/*", "*/__pycache__/*"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "def __repr__",
+    "raise NotImplementedError",
+    "if __name__ == .__main__.:",
+]
+show_missing = true

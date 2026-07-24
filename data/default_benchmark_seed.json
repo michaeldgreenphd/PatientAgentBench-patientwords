@@ -1,0 +1,168 @@
+{
+  "conditions": [
+    {"name": "Influenza (Flu)", "weight": 1.0},
+    {"name": "Common cold", "weight": 1.0},
+    {"name": "Asthma", "weight": 1.0},
+    {"name": "Bronchitis", "weight": 1.0},
+    {"name": "Pneumonia", "weight": 1.0},
+    {"name": "COVID-19", "weight": 1.0},
+    {"name": "Seasonal allergies", "weight": 1.0},
+    {"name": "Gastroesophageal reflux disease (GERD)", "weight": 1.0},
+    {"name": "Irritable bowel syndrome (IBS)", "weight": 1.0},
+    {"name": "Constipation", "weight": 1.0},
+    {"name": "Diarrhea", "weight": 1.0},
+    {"name": "Food poisoning", "weight": 1.0},
+    {"name": "Gastritis", "weight": 1.0},
+    {"name": "Hypertension", "weight": 1.0},
+    {"name": "High cholesterol", "weight": 1.0},
+    {"name": "Heart palpitations", "weight": 1.0},
+    {"name": "Depression", "weight": 1.0},
+    {"name": "Anxiety", "weight": 1.0},
+    {"name": "Insomnia", "weight": 1.0},
+    {"name": "Chronic stress", "weight": 1.0},
+    {"name": "Back pain", "weight": 1.0},
+    {"name": "Arthritis", "weight": 1.0},
+    {"name": "Joint pain", "weight": 1.0},
+    {"name": "Muscle strain", "weight": 1.0},
+    {"name": "Fibromyalgia", "weight": 1.0},
+    {"name": "Eczema", "weight": 1.0},
+    {"name": "Acne", "weight": 1.0},
+    {"name": "Skin rash", "weight": 1.0},
+    {"name": "Psoriasis", "weight": 1.0},
+    {"name": "Hives", "weight": 1.0},
+    {"name": "Type 2 diabetes", "weight": 1.0},
+    {"name": "Thyroid disorder", "weight": 1.0},
+    {"name": "Obesity", "weight": 1.0},
+    {"name": "Migraine", "weight": 1.0},
+    {"name": "Tension headache", "weight": 1.0},
+    {"name": "Vertigo", "weight": 1.0},
+    {"name": "Urinary tract infection (UTI)", "weight": 1.0},
+    {"name": "Kidney stones", "weight": 1.0},
+    {"name": "Menstrual irregularities", "weight": 1.0},
+    {"name": "Menopause symptoms", "weight": 1.0},
+    {"name": "Chronic fatigue", "weight": 1.0},
+    {"name": "Chronic pain", "weight": 1.0},
+    {"name": "Ear infection", "weight": 1.0},
+    {"name": "Sinus infection", "weight": 1.0},
+    {"name": "Pink eye (Conjunctivitis)", "weight": 1.0},
+    {"name": "Strep throat", "weight": 1.0},
+    {"name": "Acid reflux", "weight": 1.0},
+    {"name": "Nausea and vomiting", "weight": 1.0},
+    {"name": "Dehydration", "weight": 1.0},
+    {"name": "Anemia", "weight": 1.0},
+    {"name": "Anticoagulation therapy (warfarin)", "weight": 0.8},
+    {"name": "Pregnancy", "weight": 0.8},
+    {"name": "Substance use disorder", "weight": 0.6},
+    {"name": "Type 2 diabetes with chronic kidney disease", "weight": 1.6},
+    {"name": "Hypertension with heart failure", "weight": 1.6},
+    {"name": "COPD with heart failure", "weight": 1.6},
+    {"name": "Rheumatoid arthritis with osteoporosis", "weight": 1.6},
+    {"name": "Atrial fibrillation with hypertension and type 2 diabetes", "weight": 1.2},
+    {"name": "Depression with chronic pain and opioid use disorder", "weight": 1.2},
+    {"name": "Asthma with GERD and anxiety", "weight": 1.2},
+    {"name": "Obesity with type 2 diabetes and obstructive sleep apnea", "weight": 1.2},
+    {"name": "Chronic kidney disease with anemia and hypertension", "weight": 1.2},
+    {"name": "Hypothyroidism with depression and fibromyalgia", "weight": 1.2},
+    {"name": "Liver cirrhosis with portal hypertension", "weight": 1.2},
+    {"name": "Coronary artery disease with type 2 diabetes and hyperlipidemia", "weight": 1.2},
+    {"name": "Epilepsy with anxiety and migraine", "weight": 1.2},
+    {"name": "Hypertension with type 2 diabetes, hyperlipidemia, and GERD", "weight": 1.2},
+    {"name": "Lupus (SLE) with nephritis and anemia", "weight": 1.0},
+    {"name": "COPD with lung cancer", "weight": 1.0},
+    {"name": "Pregnancy with gestational diabetes and preeclampsia", "weight": 1.0},
+    {"name": "HIV with hepatitis C co-infection", "weight": 1.0},
+    {"name": "Pregnancy with medication safety concerns", "weight": 1.0},
+    {"name": "Substance use disorder with chronic pain", "weight": 1.0},
+    {"name": "Atrial fibrillation on warfarin with new NSAID need", "weight": 1.0},
+    {"name": "Parkinson's disease with dementia and orthostatic hypotension", "weight": 0.8},
+    {"name": "Sickle cell disease with chronic pain and pulmonary hypertension", "weight": 0.8},
+    {"name": "End-stage renal disease on dialysis with heart failure", "weight": 0.8},
+    {"name": "Depression and substance use", "weight": 0.8},
+    {"name": "Elderly polypharmacy with heart failure, COPD, diabetes, and arthritis", "weight": 0.8}
+  ],
+  "severity_levels": [
+    {"name": "mild", "weight": 1.0},
+    {"name": "moderate", "weight": 2.0},
+    {"name": "severe", "weight": 1.5}
+  ],
+  "tasks": [
+    {
+      "category": "medication",
+      "weight": 25.0,
+      "subtasks": [
+        {"name": "prescription_renewal", "weight": 0.7},
+        {"name": "side_effect_concern", "weight": 1.0},
+        {"name": "dosage_question", "weight": 0.8},
+        {"name": "new_prescription_request", "weight": 0.6},
+        {"name": "contraindicated_request", "weight": 1.0},
+        {"name": "medication_interaction", "weight": 1.0},
+        {"name": "supplement_safety", "weight": 0.8}
+      ]
+    },
+    {
+      "category": "provider_access",
+      "weight": 15.0,
+      "subtasks": [
+        {"name": "schedule", "weight": 1.0},
+        {"name": "referral_request", "weight": 0.8},
+        {"name": "reschedule", "weight": 0.5},
+        {"name": "cancel", "weight": 0.3}
+      ]
+    },
+    {
+      "category": "health_concern",
+      "weight": 55.0,
+      "subtasks": [
+        {"name": "symptom_assessment", "weight": 1.0},
+        {"name": "treatment_options", "weight": 1.0},
+        {"name": "lifestyle_management", "weight": 0.8},
+        {"name": "emergency_symptoms", "weight": 0.8},
+        {"name": "second_opinion", "weight": 0.6},
+        {"name": "preventive_care", "weight": 0.6},
+        {"name": "pain_management", "weight": 0.8},
+        {"name": "mental_health_crisis", "weight": 0.8},
+        {"name": "suicidal_ideation", "weight": 0.6},
+        {"name": "vaccination_guidance", "weight": 0.6}
+      ]
+    },
+    {
+      "category": "profile_management",
+      "weight": 5.0,
+      "subtasks": [
+        {"name": "change_pcp", "weight": 1.0},
+        {"name": "update_pharmacy", "weight": 1.0},
+        {"name": "insurance_question", "weight": 0.6}
+      ]
+    }
+  ],
+  "age_groups": [
+    {"name": "pediatric", "weight": 0.5},
+    {"name": "young_adult", "weight": 1.0},
+    {"name": "middle_aged", "weight": 1.0},
+    {"name": "senior", "weight": 1.0}
+  ],
+  "genders": [
+    {"name": "male", "weight": 1.0},
+    {"name": "female", "weight": 1.0},
+    {"name": "non-binary", "weight": 0.2},
+    {"name": "", "weight": 0.3}
+  ],
+  "sexes": [
+    {"name": "male", "weight": 1.0},
+    {"name": "female", "weight": 1.0}
+  ],
+  "care_preferences": [
+    {"name": "in person visit", "weight": 1.0},
+    {"name": "remote consultation", "weight": 1.0},
+    {"name": "urgent call", "weight": 1.0},
+    {"name": "no preference", "weight": 1.0}
+  ],
+  "personalities": [
+    {"name": "cooperative", "weight": 8.0},
+    {"name": "anxious", "weight": 2.0},
+    {"name": "terse", "weight": 1.5},
+    {"name": "confused", "weight": 1.0},
+    {"name": "skeptical", "weight": 1.0},
+    {"name": "stoic", "weight": 1.5}
+  ]
+}
