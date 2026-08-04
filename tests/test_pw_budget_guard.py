@@ -415,3 +415,58 @@ class TestRunWrapper:
         expected = sorted(set(roles["assistant_agent"])
                           | {v for k, v in roles.items() if k != "assistant_agent"})
         assert pw_run.configured_models(str(path)) == expected
+
+
+class TestInterruptedRunStillReports:
+    """The property the CI graceful-stop depends on.
+
+    A generation run that overruns its deadline is sent SIGINT, which reaches
+    Python as KeyboardInterrupt. If that escaped without writing the report, a
+    run that had spent real money would leave no sidecar and the ledger would
+    never see it -- the exact failure that already happened once, when a crash
+    cost $0.0045 that had to be reconciled by hand afterwards.
+
+    KeyboardInterrupt is a BaseException, so an `except Exception` in the
+    wrapper would not have caught it and the `finally` is what does the work.
+    """
+
+    def _run_wrapper(self, tmp_path, failure, monkeypatch):
+        report = tmp_path / "run.report.json"
+        guard = bg.SpendGuard(ceiling_usd=4.0)
+
+        def fake_main():
+            # Spend something first: a report of zero would pass this test for
+            # the wrong reason.
+            guard.record(PRICED, {"input_tokens": 1_000_000, "output_tokens": 0})
+            raise failure
+
+        monkeypatch.setattr(pw_run, "main", fake_main)
+        monkeypatch.setattr(bg, "guard_from_env", lambda: guard)
+        monkeypatch.setattr(bg, "report_path_from_env", lambda: report)
+        monkeypatch.setattr(pw_run, "config_path", lambda _argv: None)
+        return report, guard
+
+    def test_keyboard_interrupt_still_writes_the_sidecar(self, tmp_path, monkeypatch):
+        report, _ = self._run_wrapper(tmp_path, KeyboardInterrupt(), monkeypatch)
+        with pytest.raises(KeyboardInterrupt):
+            pw_run.run()
+        data = json.loads(report.read_text())
+        assert data["cost_usd"] == pytest.approx(0.80)
+        assert data["outcome"] == "failed"
+
+    def test_an_ordinary_crash_still_writes_the_sidecar(self, tmp_path, monkeypatch):
+        report, _ = self._run_wrapper(tmp_path, RuntimeError("boom"), monkeypatch)
+        with pytest.raises(RuntimeError):
+            pw_run.run()
+        assert json.loads(report.read_text())["cost_usd"] == pytest.approx(0.80)
+
+    def test_a_tripped_ceiling_writes_the_sidecar_and_exits_nonzero(
+            self, tmp_path, monkeypatch):
+        report, _ = self._run_wrapper(
+            tmp_path, bg.BudgetExceeded("ceiling reached"), monkeypatch)
+        with pytest.raises(SystemExit) as exc:
+            pw_run.run()
+        assert exc.value.code == 2
+        data = json.loads(report.read_text())
+        assert data["outcome"] == "ceiling_tripped"
+        assert data["cost_usd"] == pytest.approx(0.80)
