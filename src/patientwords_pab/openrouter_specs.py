@@ -116,6 +116,14 @@ class OpenRouterModel(NamedTuple):
 # and this repo's sandbox cannot reach openrouter.ai to do it automatically.
 _ENGINE_REGISTRY = "patientwords-engine/data/advice_providers.json"
 
+# Live prices, captured from OpenRouter's own /models endpoint by
+# `openrouter_catalog.py` running in CI (this sandbox cannot reach the host) and
+# committed to the engine so the numbers are checkable from git rather than
+# transcribed from a log. Two files because the first run's 12-result search cap
+# hid two of the paper's slugs; the second went back for them specifically.
+_LIVE_CATALOGUE_1 = "patientwords-engine/data/pab/openrouter_catalogue_20260804T025116Z.json"
+_LIVE_CATALOGUE_2 = "patientwords-engine/data/pab/openrouter_catalogue_20260804T043055Z.json"
+
 OPENROUTER_MODELS: List[OpenRouterModel] = [
     OpenRouterModel(
         slug="openai/gpt-5.4-mini",
@@ -166,6 +174,99 @@ OPENROUTER_MODELS: List[OpenRouterModel] = [
         input_price_per_1m=0.35,
         output_price_per_1m=2.75,
         price_source=f"{_ENGINE_REGISTRY} :: openrouter.pricing['google/gemini-3.5-flash']",
+    ),
+    # ---------------------------------------------------------------------
+    # The PatientAgentBench paper's evaluated set (Table 4). Registered so the
+    # trait sweep can be run across the same models the benchmark's authors
+    # scored, making their aggregate/triage numbers a reference point for ours.
+    #
+    # These prices are LIVE, not ceiling-side: each is the figure OpenRouter's
+    # own /models endpoint returned, captured in CI and committed to the engine
+    # at the paths named below. That is a stronger source than the reviewed
+    # provider registry above -- which is deliberately list-price-plus-margin --
+    # so the two coexist rather than one overwriting the other, and every entry
+    # says which it is. Re-verify with:
+    #   python -m patientwords_pab.openrouter_catalog --require <slug>
+    # ---------------------------------------------------------------------
+    OpenRouterModel(
+        slug="anthropic/claude-opus-4.8",
+        display_name="Claude Opus 4.8 (OpenRouter)",
+        input_price_per_1m=5.0,
+        output_price_per_1m=25.0,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['claude-opus']",
+        note="Paper Table 4: highest aggregate (4.25) and triage pass rate (88%).",
+    ),
+    OpenRouterModel(
+        slug="anthropic/claude-sonnet-5",
+        display_name="Claude Sonnet 5 (OpenRouter)",
+        input_price_per_1m=2.0,
+        output_price_per_1m=10.0,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['claude-sonnet']",
+        note="Paper Table 4: aggregate 4.20, best triage average (3.77).",
+    ),
+    OpenRouterModel(
+        slug="anthropic/claude-haiku-4.5",
+        display_name="Claude Haiku 4.5 (OpenRouter)",
+        input_price_per_1m=1.0,
+        output_price_per_1m=5.0,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['claude-haiku']",
+        note="Paper Table 4: aggregate 3.63, triage pass 47%.",
+    ),
+    OpenRouterModel(
+        slug="openai/gpt-5.4",
+        display_name="GPT-5.4 (OpenRouter)",
+        input_price_per_1m=2.5,
+        output_price_per_1m=15.0,
+        price_source=f"{_LIVE_CATALOGUE_2} :: search['gpt-5.4']",
+        default_temperature=1,
+        note="Paper Table 4: aggregate 4.16, triage pass 82%. The gpt-5 family "
+             "accepts only temperature=1.",
+    ),
+    OpenRouterModel(
+        slug="google/gemini-3-flash-preview",
+        display_name="Gemini 3 Flash (OpenRouter)",
+        input_price_per_1m=0.5,
+        output_price_per_1m=3.0,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['gemini-3']",
+        note="Paper Table 4: aggregate 3.78, triage pass 60%. OpenRouter carries "
+             "this as a -preview slug; there is no non-preview Gemini 3 Flash id.",
+    ),
+    OpenRouterModel(
+        slug="google/gemini-3.1-pro-preview",
+        display_name="Gemini 3.1 Pro (OpenRouter)",
+        input_price_per_1m=2.0,
+        output_price_per_1m=12.0,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['gemini-3']",
+        note="Paper Table 4: aggregate 3.71 but the weakest triage pass rate of "
+             "the frontier models (36%) -- the largest capability/triage gap in "
+             "the table, which makes it the most interesting model here.",
+    ),
+    OpenRouterModel(
+        slug="openai/gpt-oss-120b",
+        display_name="GPT-OSS-120B (OpenRouter)",
+        input_price_per_1m=0.037,
+        output_price_per_1m=0.17,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['gpt-oss']",
+        note="Paper Table 4: aggregate 3.45, triage pass 46%.",
+    ),
+    OpenRouterModel(
+        slug="qwen/qwen3-235b-a22b-2507",
+        display_name="Qwen3 235B A22B Instruct (OpenRouter)",
+        input_price_per_1m=0.1495,
+        output_price_per_1m=0.598,
+        price_source=f"{_LIVE_CATALOGUE_2} :: search['qwen3-235b']",
+        note="Paper Table 4 'Qwen3-235B': aggregate 3.40, triage pass 32%. Three "
+             "235B slugs exist on OpenRouter; this is the instruct build, chosen "
+             "because the paper's Bedrock entry is non-thinking. The "
+             "-thinking-2507 build is a different model, not a config flag.",
+    ),
+    OpenRouterModel(
+        slug="qwen/qwen3-next-80b-a3b-instruct",
+        display_name="Qwen3 Next 80B A3B Instruct (OpenRouter)",
+        input_price_per_1m=0.09,
+        output_price_per_1m=1.1,
+        price_source=f"{_LIVE_CATALOGUE_1} :: search['qwen3']",
+        note="Paper Table 4: lowest aggregate (3.10), triage pass 32%.",
     ),
 ]
 

@@ -26,6 +26,10 @@ from patientwords_pab.free_trait_agent import (
     FreeTraitUserAgent,
     register_free_trait_agent,
 )
+from patientwords_pab.direct_api_specs import (
+    PRICED_DIRECT_API,
+    register_direct_api_models,
+)
 from patientwords_pab.openrouter_specs import (
     API_KEY_ENV,
     BASE_URL,
@@ -62,6 +66,7 @@ __all__ = [
     "NEUTRAL_BASE",
     "NEUTRAL_LEVEL",
     "OPENROUTER_MODELS",
+    "PRICED_DIRECT_API",
     "PW_PREFIX",
     "FreeTraitUserAgent",
     "TraitSpec",
@@ -74,6 +79,7 @@ __all__ = [
     "openrouter_model_specs",
     "parse_trait_spec",
     "preset_distances",
+    "register_direct_api_models",
     "register_free_trait_agent",
     "register_openrouter_models",
     "registry_key",

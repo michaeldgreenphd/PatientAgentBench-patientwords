@@ -1,0 +1,716 @@
+[
+  {
+    "condition_name": "Gastroesophageal reflux disease (GERD)",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "severe",
+    "task_type": "health_concern_mental_health_crisis",
+    "scenario_id": "301ed132-57f2-4aac-a990-73b4667f3a90--arm0",
+    "has_image": "False",
+    "patient_story": "Dolores 'Dolly' Whitfield is a 72-year-old woman with a longstanding history of severe gastroesophageal reflux disease who has experienced a significant worsening of both her physical and emotional health over the past several months. She reports near-daily episodes of severe heartburn, regurgitation, and chest tightness that frequently wake her from sleep, leaving her exhausted and increasingly reluctant to eat, resulting in an unintentional weight loss of approximately 12 pounds over the past three months. Dolly lives alone since the passing of her husband two years ago, and she has confided to her daughter that she has been feeling profoundly hopeless, tearful most days, and has had passive thoughts that she would be better off not waking up \u2014 prompting her daughter to encourage her to seek help immediately. She strongly prefers remote consultations due to limited mobility and anxiety about leaving her apartment, and she is reaching out today via telehealth hoping to speak with someone about both her worsening reflux symptoms and the emotional distress that has become overwhelming. Her gastroenterologist recently recommended an upper endoscopy, which she has been postponing due to fear and low motivation, and her primary care provider has been managing her depression with sertraline, though she feels it is no longer helping.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Dolores",
+        "last_name": "Whitfield",
+        "preferred_name": "Dolly",
+        "dob": "1952-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "dolores.whitfield52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013472891",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Renata",
+          "last_name": "Whitfield",
+          "relationship": "daughter",
+          "phone": "9016583047"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Omeprazole",
+          "dosage": "40mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-05",
+          "reason": "Gastroesophageal reflux disease (GERD)"
+        },
+        {
+          "id": "med_002",
+          "name": "Sucralfate",
+          "dosage": "1g",
+          "frequency": "four times daily",
+          "status": "active",
+          "prescribed_date": "2023-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-18",
+          "reason": "Esophageal mucosal protection / severe GERD"
+        },
+        {
+          "id": "med_003",
+          "name": "Metoclopramide",
+          "dosage": "10mg",
+          "frequency": "three times daily before meals",
+          "status": "active",
+          "prescribed_date": "2023-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-30",
+          "reason": "Gastroparesis / GERD symptom management"
+        },
+        {
+          "id": "med_004",
+          "name": "Sertraline",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Depression / anxiety related to chronic illness"
+        },
+        {
+          "id": "med_005",
+          "name": "Ranitidine",
+          "dosage": "150mg",
+          "frequency": "twice daily",
+          "status": "past",
+          "prescribed_date": "2021-04-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2022-07-20",
+          "reason": "GERD (discontinued, switched to Omeprazole)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Gastroesophageal reflux disease (GERD)",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "severe",
+    "task_type": "health_concern_mental_health_crisis",
+    "scenario_id": "301ed132-57f2-4aac-a990-73b4667f3a90--arm1",
+    "has_image": "False",
+    "patient_story": "Dolores 'Dolly' Whitfield is a 72-year-old woman with a longstanding history of severe gastroesophageal reflux disease who has experienced a significant worsening of both her physical and emotional health over the past several months. She reports near-daily episodes of severe heartburn, regurgitation, and chest tightness that frequently wake her from sleep, leaving her exhausted and increasingly reluctant to eat, resulting in an unintentional weight loss of approximately 12 pounds over the past three months. Dolly lives alone since the passing of her husband two years ago, and she has confided to her daughter that she has been feeling profoundly hopeless, tearful most days, and has had passive thoughts that she would be better off not waking up \u2014 prompting her daughter to encourage her to seek help immediately. She strongly prefers remote consultations due to limited mobility and anxiety about leaving her apartment, and she is reaching out today via telehealth hoping to speak with someone about both her worsening reflux symptoms and the emotional distress that has become overwhelming. Her gastroenterologist recently recommended an upper endoscopy, which she has been postponing due to fear and low motivation, and her primary care provider has been managing her depression with sertraline, though she feels it is no longer helping.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Dolores",
+        "last_name": "Whitfield",
+        "preferred_name": "Dolly",
+        "dob": "1952-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "dolores.whitfield52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013472891",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Renata",
+          "last_name": "Whitfield",
+          "relationship": "daughter",
+          "phone": "9016583047"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Omeprazole",
+          "dosage": "40mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-05",
+          "reason": "Gastroesophageal reflux disease (GERD)"
+        },
+        {
+          "id": "med_002",
+          "name": "Sucralfate",
+          "dosage": "1g",
+          "frequency": "four times daily",
+          "status": "active",
+          "prescribed_date": "2023-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-18",
+          "reason": "Esophageal mucosal protection / severe GERD"
+        },
+        {
+          "id": "med_003",
+          "name": "Metoclopramide",
+          "dosage": "10mg",
+          "frequency": "three times daily before meals",
+          "status": "active",
+          "prescribed_date": "2023-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-30",
+          "reason": "Gastroparesis / GERD symptom management"
+        },
+        {
+          "id": "med_004",
+          "name": "Sertraline",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Depression / anxiety related to chronic illness"
+        },
+        {
+          "id": "med_005",
+          "name": "Ranitidine",
+          "dosage": "150mg",
+          "frequency": "twice daily",
+          "status": "past",
+          "prescribed_date": "2021-04-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2022-07-20",
+          "reason": "GERD (discontinued, switched to Omeprazole)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Lupus (SLE) with nephritis and anemia",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "ae13749a-edf8-4344-b7aa-59159871b2e5--arm0",
+    "has_image": "False",
+    "patient_story": "Ray Okafor is a 72-year-old transgender woman with a longstanding diagnosis of moderate systemic lupus erythematosus complicated by lupus nephritis and chronic anemia, who presents today with an urgent concern about new and worsening symptoms over the past 48 hours. She reports a sudden increase in bilateral lower extremity swelling extending to the knees, decreased urine output, and foamy urine, which she recognizes as potential signs of a nephritis flare; she is also experiencing significant fatigue, shortness of breath with minimal exertion, and a new facial rash that has spread beyond her typical malar distribution. Ray's spouse called her rheumatologist's office this morning but was unable to reach anyone directly, and Ray is now requesting an in-person evaluation as soon as possible because she is deeply concerned these symptoms may represent a serious flare or acute kidney injury requiring immediate assessment. She has been adherent to her current medication regimen including hydroxychloroquine, mycophenolate mofetil, prednisone, ferrous sulfate, and lisinopril, but notes she ran a low-grade fever of 99.8\u00b0F last night and has had a mild headache since yesterday, raising concern for possible infection or disease exacerbation that warrants urgent in-person clinical evaluation and laboratory workup.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Raymond",
+        "last_name": "Okafor",
+        "preferred_name": "Ray",
+        "dob": "1952-03-14",
+        "sex": "male",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "ray.okafor52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "9016523841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "UnitedHealthcare Medicare Advantage",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Systemic lupus erythematosus (SLE)"
+        },
+        {
+          "id": "med_002",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-18",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-15",
+          "reason": "SLE flare and lupus nephritis inflammation"
+        },
+        {
+          "id": "med_003",
+          "name": "Mycophenolate mofetil",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-28",
+          "reason": "Lupus nephritis immunosuppression"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Anemia secondary to SLE and chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2022-07-30",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-20",
+          "reason": "Proteinuria management in lupus nephritis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Lupus (SLE) with nephritis and anemia",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "ae13749a-edf8-4344-b7aa-59159871b2e5--arm1",
+    "has_image": "False",
+    "patient_story": "Ray Okafor is a 72-year-old transgender woman with a longstanding diagnosis of moderate systemic lupus erythematosus complicated by lupus nephritis and chronic anemia, who presents today with an urgent concern about new and worsening symptoms over the past 48 hours. She reports a sudden increase in bilateral lower extremity swelling extending to the knees, decreased urine output, and foamy urine, which she recognizes as potential signs of a nephritis flare; she is also experiencing significant fatigue, shortness of breath with minimal exertion, and a new facial rash that has spread beyond her typical malar distribution. Ray's spouse called her rheumatologist's office this morning but was unable to reach anyone directly, and Ray is now requesting an in-person evaluation as soon as possible because she is deeply concerned these symptoms may represent a serious flare or acute kidney injury requiring immediate assessment. She has been adherent to her current medication regimen including hydroxychloroquine, mycophenolate mofetil, prednisone, ferrous sulfate, and lisinopril, but notes she ran a low-grade fever of 99.8\u00b0F last night and has had a mild headache since yesterday, raising concern for possible infection or disease exacerbation that warrants urgent in-person clinical evaluation and laboratory workup.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Raymond",
+        "last_name": "Okafor",
+        "preferred_name": "Ray",
+        "dob": "1952-03-14",
+        "sex": "male",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "ray.okafor52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "9016523841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "UnitedHealthcare Medicare Advantage",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Systemic lupus erythematosus (SLE)"
+        },
+        {
+          "id": "med_002",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-18",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-15",
+          "reason": "SLE flare and lupus nephritis inflammation"
+        },
+        {
+          "id": "med_003",
+          "name": "Mycophenolate mofetil",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-28",
+          "reason": "Lupus nephritis immunosuppression"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Anemia secondary to SLE and chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2022-07-30",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-20",
+          "reason": "Proteinuria management in lupus nephritis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Substance use disorder",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "provider_access_schedule",
+    "scenario_id": "f9029aec-ec04-48ef-8560-ece1a576bbae--arm0",
+    "has_image": "False",
+    "patient_story": "Loretta Beaumont is a 71-year-old retired schoolteacher from Baton Rouge, Louisiana, who was identified approximately eight months ago by her primary care physician as having a mild alcohol use disorder following a candid conversation during a routine wellness visit, at which point she disclosed consuming four to five glasses of wine nightly over the preceding two years, a habit she attributed to loneliness and disrupted sleep after her husband's passing in 2022. She was started on naltrexone and thiamine supplementation and has since reduced her alcohol intake significantly, now reporting one to two drinks on most evenings with several alcohol-free days per week, which she considers a meaningful improvement but acknowledges she still struggles with evening cravings and occasional low mood. Loretta is now seeking to schedule an in-person follow-up appointment with her addiction medicine specialist or her primary care provider to review her progress, discuss whether her current medication regimen remains appropriate, and explore whether structured outpatient counseling or a senior-focused support group might be a beneficial addition to her care plan. She strongly prefers face-to-face visits, expressing that she finds it difficult to communicate her emotional concerns over video or phone calls and values the personal connection of seeing her care team in person. Her daughter Diane, who lives nearby, is supportive of her treatment and occasionally accompanies her to appointments.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "71",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Loretta",
+        "last_name": "Beaumont",
+        "preferred_name": "Lori",
+        "dob": "1953-04-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "lori.beaumont53@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4218 Magnolia Creek Drive",
+          "address2": "",
+          "city": "Baton Rouge",
+          "state": "LA",
+          "zip": "70808",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2253847612",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Diane",
+          "last_name": "Beaumont",
+          "relationship": "daughter",
+          "phone": "2254019873"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naltrexone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2025-02-10",
+          "reason": "Alcohol use disorder - craving reduction"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-15",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Thiamine (Vitamin B1)",
+          "dosage": "100mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2025-02-10",
+          "reason": "Nutritional supplementation related to alcohol use"
+        },
+        {
+          "id": "med_004",
+          "name": "Lorazepam",
+          "dosage": "0.5mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-10-01",
+          "reason": "Short-term management of alcohol withdrawal anxiety"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Substance use disorder",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "provider_access_schedule",
+    "scenario_id": "f9029aec-ec04-48ef-8560-ece1a576bbae--arm1",
+    "has_image": "False",
+    "patient_story": "Loretta Beaumont is a 71-year-old retired schoolteacher from Baton Rouge, Louisiana, who was identified approximately eight months ago by her primary care physician as having a mild alcohol use disorder following a candid conversation during a routine wellness visit, at which point she disclosed consuming four to five glasses of wine nightly over the preceding two years, a habit she attributed to loneliness and disrupted sleep after her husband's passing in 2022. She was started on naltrexone and thiamine supplementation and has since reduced her alcohol intake significantly, now reporting one to two drinks on most evenings with several alcohol-free days per week, which she considers a meaningful improvement but acknowledges she still struggles with evening cravings and occasional low mood. Loretta is now seeking to schedule an in-person follow-up appointment with her addiction medicine specialist or her primary care provider to review her progress, discuss whether her current medication regimen remains appropriate, and explore whether structured outpatient counseling or a senior-focused support group might be a beneficial addition to her care plan. She strongly prefers face-to-face visits, expressing that she finds it difficult to communicate her emotional concerns over video or phone calls and values the personal connection of seeing her care team in person. Her daughter Diane, who lives nearby, is supportive of her treatment and occasionally accompanies her to appointments.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "71",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Loretta",
+        "last_name": "Beaumont",
+        "preferred_name": "Lori",
+        "dob": "1953-04-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "lori.beaumont53@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4218 Magnolia Creek Drive",
+          "address2": "",
+          "city": "Baton Rouge",
+          "state": "LA",
+          "zip": "70808",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2253847612",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Diane",
+          "last_name": "Beaumont",
+          "relationship": "daughter",
+          "phone": "2254019873"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naltrexone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2025-02-10",
+          "reason": "Alcohol use disorder - craving reduction"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-15",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Thiamine (Vitamin B1)",
+          "dosage": "100mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2025-02-10",
+          "reason": "Nutritional supplementation related to alcohol use"
+        },
+        {
+          "id": "med_004",
+          "name": "Lorazepam",
+          "dosage": "0.5mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-10-01",
+          "reason": "Short-term management of alcohol withdrawal anxiety"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=high"
+  }
+]

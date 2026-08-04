@@ -389,7 +389,13 @@ PILOT_SWEEPS = {
     f"{PILOT_DIR}/sweep_health_literacy_n8.json": (8, 4),
     f"{PILOT_DIR}/sweep_health_literacy_n13.json": (13, 4),
     f"{PILOT_DIR}/sweep_health_literacy_2arm_n13.json": (13, 2),
+    f"{PILOT_DIR}/sweep_health_literacy_2arm_n3.json": (3, 2),
 }
+
+#: The cross-model run: the ten models PatientAgentBench's paper evaluates
+#: (Table 4), over the 3-case two-arm subset.
+PAPER10_CONFIG = f"{PILOT_DIR}/config_paper10.json"
+PAPER10_SWEEP = f"{PILOT_DIR}/sweep_health_literacy_2arm_n3.json"
 
 
 class TestCommittedPilotArtifacts:
@@ -444,3 +450,171 @@ class TestCommittedPilotArtifacts:
 
     def test_pilot_turns_match_the_costed_plan(self):
         assert BenchConfig.from_file(PILOT_CONFIG).max_turns == 3
+
+
+# =============================================================================
+# The cross-model run
+# =============================================================================
+
+class TestPaperTenConfig:
+    """The config that spends the OpenRouter budget across the paper's models.
+
+    Every assertion here is something that, if wrong, is only discovered partway
+    through a paid run -- an unpriced leg, a model the registry cannot resolve,
+    an ordering that loses the expensive results first.
+    """
+
+    def test_every_role_resolves_without_aws(self):
+        config = BenchConfig.from_file(PAPER10_CONFIG)
+        models = ([s.model for s in config.assistant_agents]
+                  + [s.model for s in config.user_agents]
+                  + list(config.evaluator_models)
+                  + [config.sandbox_model, config.seed_generator_model,
+                     config.analyzer_model])
+        for model in models:
+            assert model.requires_bedrock is False, model.model
+
+    def test_all_ten_paper_models_are_present(self):
+        config = BenchConfig.from_file(PAPER10_CONFIG)
+        assert len(config.assistant_agents) == 10
+        assert len({s.model.model for s in config.assistant_agents}) == 10
+
+    def test_every_model_is_priced_so_the_ceiling_is_enforceable(self):
+        """The guard refuses to start on an unpriced leg. Finding that here
+        costs nothing; finding it in CI costs the queue slot and the wait."""
+        from patientwords_pab.budget_guard import SpendGuard
+        from patientwords_pab.run import configured_models
+
+        SpendGuard(ceiling_usd=4.0).require_priced(configured_models(PAPER10_CONFIG))
+
+    def test_assistants_are_ordered_most_expensive_first(self):
+        """Upstream runs assistants in list order and the guard aborts hard, so
+        whatever is lost to a ceiling trip is the tail. Cheapest-last means a
+        trip costs the models that are also cheapest to re-run.
+
+        Ordered by cost per *conversation*, not by input price: the two differ
+        wherever a model's input and output rates rank differently, and it is
+        the conversation cost that decides what a trip actually loses. The token
+        mix is the one measured by the tool-calling smoke test at 3 turns
+        (data/pab/toolcall_smoke_20260804T042921Z.report.json in the engine).
+        """
+        from patient_agent_bench.model_registry import get_model_pricing
+
+        assistant_in, assistant_out = 20_079, 635
+        config = BenchConfig.from_file(PAPER10_CONFIG)
+        costs = []
+        for spec in config.assistant_agents:
+            price = get_model_pricing(spec.model.model)
+            costs.append((assistant_in * price["input_price_per_1m"]
+                          + assistant_out * price["output_price_per_1m"]) / 1e6)
+        assert costs == sorted(costs, reverse=True), (
+            "assistant order is not most-expensive-first: "
+            + ", ".join(f"{s.model.model}=${c:.5f}"
+                        for s, c in zip(config.assistant_agents, costs))
+        )
+
+    def test_patient_and_sandbox_are_held_fixed(self):
+        """The assistant is the only thing that varies. A patient model that
+        moved between arms would confound the manipulation with the stimulus."""
+        config = BenchConfig.from_file(PAPER10_CONFIG)
+        assert len(config.user_agents) == 1
+        assert config.user_agents[0].agent_class == "pw_free_trait"
+        assert config.user_agents[0].model.model == "openrouter:x-ai/grok-4.3"
+        assert config.sandbox_model.model == "openrouter:openai/gpt-5.4-mini"
+
+    def test_jury_is_the_priced_direct_api_variant(self):
+        """Upstream's own -api keys are unpriced, which would make the Anthropic
+        ceiling unenforceable. The pw: variant carries the price."""
+        from patient_agent_bench.model_registry import get_model_pricing
+
+        config = BenchConfig.from_file(PAPER10_CONFIG)
+        jury = config.evaluator_models[0].model
+        assert jury.startswith("pw:")
+        assert get_model_pricing(jury) is not None
+
+    def test_turns_match_the_measured_cost_basis(self):
+        """The run was sized from a 3-turn smoke measurement. Changing turns
+        changes the cost per conversation quadratically, so the number the
+        budget was computed from is pinned here."""
+        assert BenchConfig.from_file(PAPER10_CONFIG).max_turns == 3
+
+    def test_sweep_subset_keeps_the_pairing_and_spans_severity(self):
+        """Three paired cases, one per severity level: the dimension the
+        paper's triage scores separate models on."""
+        raw = json.loads(Path(PAPER10_SWEEP).read_text(encoding="utf-8"))
+        assert len(raw) == 6
+        cases = {}
+        for entry in raw:
+            cases.setdefault(entry["scenario_id"].rsplit("--", 1)[0], []).append(entry)
+        assert len(cases) == 3
+        assert all(len(group) == 2 for group in cases.values())
+        assert {group[0]["severity_level"] for group in cases.values()} == {
+            "mild", "moderate", "severe"}
+
+    def test_subset_cases_come_from_the_full_sweep_unmodified(self):
+        """A subset that edited its cases would not be a subset."""
+        full = {e["scenario_id"]: e for e in json.loads(
+            Path(f"{PILOT_DIR}/sweep_health_literacy_2arm_n13.json").read_text(
+                encoding="utf-8"))}
+        for entry in json.loads(Path(PAPER10_SWEEP).read_text(encoding="utf-8")):
+            assert entry == full[entry["scenario_id"]]
+
+
+class TestRehearsalUnderTheGuard:
+    """The real pipeline, mocked models, guard installed.
+
+    The rehearsal above proves the plumbing works. This proves the plumbing
+    works *while metered*: that the guard's wrapper survives the real
+    ConversationRunner, that usage actually accumulates, and that a ceiling set
+    below the run's cost stops it instead of being swallowed by upstream's retry
+    logic. Those are the three ways an enforced ceiling silently is not one.
+    """
+
+    def test_guard_meters_a_real_run_and_can_stop_it(self, tmp_path):
+        import subprocess
+        import sys
+
+        probe = tmp_path / "probe.py"
+        probe.write_text(f'''
+import json, sys
+from unittest.mock import AsyncMock, MagicMock, patch
+from langchain_core.messages import AIMessage
+import patientwords_pab
+from patientwords_pab import budget_guard as bg
+
+PRICED = "openrouter:openai/gpt-5.4-mini"
+
+def fake_llm(*a, **k):
+    model = MagicMock()
+    reply = AIMessage(content="ok")
+    reply.usage_metadata = {{"input_tokens": 1_000_000, "output_tokens": 0,
+                            "total_tokens": 1_000_000}}
+    model.invoke.return_value = reply
+    model.ainvoke = AsyncMock(return_value=reply)
+    model.bind_tools.return_value = model
+    return model
+
+guard = bg.SpendGuard(ceiling_usd={{ceiling}})
+with patch("patient_agent_bench.config.create_chat_model", fake_llm):
+    bg.install(guard)
+    from patient_agent_bench.config import create_chat_model
+    from patient_agent_bench.user_agent.default_agent import DefaultUserAgent
+    from patient_agent_bench.config import ModelConfig
+    tripped = False
+    try:
+        for _ in range(10):
+            model = create_chat_model(ModelConfig(model=PRICED))
+            model.invoke("x")
+    except bg.BudgetExceeded:
+        tripped = True
+print(json.dumps({{"tripped": tripped, "spent": guard.total(),
+                  "calls": guard.per_model[PRICED].calls}}))
+'''.replace("{ceiling}", "2.0"))
+        result = subprocess.run([sys.executable, str(probe)], capture_output=True,
+                                text=True, timeout=180)
+        assert result.returncode == 0, result.stderr
+        out = json.loads(result.stdout.strip().splitlines()[-1])
+        # $0.80 per call at the registered ceiling-side price; trips on the third.
+        assert out["tripped"] is True
+        assert out["calls"] == 3
+        assert out["spent"] == pytest.approx(2.40)

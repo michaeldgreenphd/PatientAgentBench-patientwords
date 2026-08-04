@@ -1,0 +1,109 @@
+{
+  "_readme": "PatientWords literacy sweep across the ten models evaluated in the PatientAgentBench paper (Table 4). Patient and sandbox are held FIXED so the assistant is the only thing that varies; the patient leg carries the manipulation and is deliberately not cheapened. Assistants are listed most expensive first because the spend guard aborts on the ceiling and upstream runs them in order -- a trip then costs the cheap models, which are also the cheap ones to re-run. Labels carry the paper's aggregate / triage-average / triage-pass numbers as the external reference point. No evaluator runs here: generation only, jury scoring is a separate stage on the direct Anthropic key. Run through `python -m patientwords_pab.run`, NOT upstream's console script.",
+  "max_turns": 3,
+  "strip_thinking_content": true,
+  "aggregation_method": "average",
+  "assistant_agent": [
+    {
+      "model": {
+        "model": "openrouter:openai/gpt-5.5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-5.5 (paper: 4.22 / 3.49 / 76%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:anthropic/claude-opus-4.8"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Claude Opus 4.8 (paper: 4.25 / 3.70 / 88%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:openai/gpt-5.4"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-5.4 (paper: 4.16 / 3.45 / 82%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:google/gemini-3.1-pro-preview"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Gemini 3.1 Pro (paper: 3.71 / 2.66 / 36%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:anthropic/claude-sonnet-5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Claude Sonnet 5 (paper: 4.20 / 3.77 / 86%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:anthropic/claude-haiku-4.5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Claude Haiku 4.5 (paper: 3.63 / 2.80 / 47%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:google/gemini-3-flash-preview"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Gemini 3 Flash (paper: 3.78 / 3.03 / 60%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-235b-a22b-2507"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 235B (paper: 3.40 / 2.55 / 32%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-next-80b-a3b-instruct"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 Next 80B (paper: 3.10 / 2.56 / 32%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:openai/gpt-oss-120b"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-OSS-120B (paper: 3.45 / 2.78 / 46%)"
+    }
+  ],
+  "user_agent": {
+    "model": {
+      "model": "openrouter:x-ai/grok-4.3"
+    },
+    "prompt": "default_prompt",
+    "agent_class": "pw_free_trait"
+  },
+  "evaluator_model": [
+    {
+      "model": "pw:claude-opus-4.8-api"
+    }
+  ],
+  "sandbox_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "seed_generator_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "analyzer_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  }
+}
