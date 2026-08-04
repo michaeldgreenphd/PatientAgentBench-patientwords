@@ -1,0 +1,85 @@
+{
+  "_readme": "Continuation of config_paper10.json: the seven paper models whose experiments did NOT complete in run 30879016218 (cancelled 13 minutes in). GPT-5.5, Claude Opus 4.8 and GPT-5.4 finished all six conversations each and are recovered from that run's artifact, so re-running them would pay twice for the same data. Everything else -- patient, sandbox, turns, cases -- is identical, which is what makes the two halves poolable. Still ordered most expensive first.",
+  "max_turns": 3,
+  "strip_thinking_content": true,
+  "aggregation_method": "average",
+  "assistant_agent": [
+    {
+      "model": {
+        "model": "openrouter:google/gemini-3.1-pro-preview"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Gemini 3.1 Pro (paper: 3.71 / 2.66 / 36%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:anthropic/claude-sonnet-5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Claude Sonnet 5 (paper: 4.20 / 3.77 / 86%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:anthropic/claude-haiku-4.5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Claude Haiku 4.5 (paper: 3.63 / 2.80 / 47%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:google/gemini-3-flash-preview"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Gemini 3 Flash (paper: 3.78 / 3.03 / 60%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-235b-a22b-2507"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 235B (paper: 3.40 / 2.55 / 32%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-next-80b-a3b-instruct"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 Next 80B (paper: 3.10 / 2.56 / 32%)"
+    },
+    {
+      "model": {
+        "model": "openrouter:openai/gpt-oss-120b"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-OSS-120B (paper: 3.45 / 2.78 / 46%)"
+    }
+  ],
+  "user_agent": {
+    "model": {
+      "model": "openrouter:x-ai/grok-4.3"
+    },
+    "prompt": "default_prompt",
+    "agent_class": "pw_free_trait"
+  },
+  "evaluator_model": [
+    {
+      "model": "pw:claude-opus-4.8-api"
+    }
+  ],
+  "sandbox_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "seed_generator_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "analyzer_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  }
+}
