@@ -26,6 +26,18 @@ from patientwords_pab.free_trait_agent import (
     FreeTraitUserAgent,
     register_free_trait_agent,
 )
+from patientwords_pab.openrouter_specs import (
+    API_KEY_ENV,
+    BASE_URL,
+    BASE_URL_ENV,
+    KEY_PREFIX,
+    OPENROUTER_MODELS,
+    api_key_present,
+    openrouter_model_specs,
+    register_openrouter_models,
+    registry_key,
+    vendor_pack,
+)
 from patientwords_pab.trait_spec import (
     NEUTRAL_BASE,
     NEUTRAL_LEVEL,
@@ -43,19 +55,29 @@ from patientwords_pab.trait_spec import (
 )
 
 __all__ = [
+    "API_KEY_ENV",
+    "BASE_URL",
+    "BASE_URL_ENV",
+    "KEY_PREFIX",
     "NEUTRAL_BASE",
     "NEUTRAL_LEVEL",
+    "OPENROUTER_MODELS",
     "PW_PREFIX",
     "FreeTraitUserAgent",
     "TraitSpec",
     "TraitSpecError",
+    "api_key_present",
     "format_trait_spec",
     "is_free_trait_spec",
     "neutral_traits",
     "off_preset_level_pairs",
+    "openrouter_model_specs",
     "parse_trait_spec",
     "preset_distances",
     "register_free_trait_agent",
+    "register_openrouter_models",
+    "registry_key",
     "render_trait_block",
     "single_factor_arms",
+    "vendor_pack",
 ]

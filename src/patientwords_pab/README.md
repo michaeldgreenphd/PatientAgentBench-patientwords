@@ -92,6 +92,67 @@ console script: the console script is upstream's entry point and does not import
 this package, so `agent_class: "pw_free_trait"` would raise
 `KeyError: Unknown user agent_class` — loudly, before any spend.
 
+## OpenRouter models
+
+Upstream's registry already supports a second access channel —
+`provider="openai-protocol-api"` with `auth="api_key"`, `base_url_env` and
+`api_key_env`, documented for a non-default OpenAI-compatible endpoint. OpenRouter
+is that shape, so `openrouter_specs.py` adds entries rather than changing code:
+`MODEL_STORE` is a plain dict and `get_model_spec()` reads it at call time, so the
+specs are injected at import, the same pattern as `register_user_agent`.
+
+Registry keys are the *engine's* names — `openrouter:<vendor>/<model>` — not
+upstream's `<family>-<version>-api` convention. The measurement engine already
+names OpenRouter models that way and writes that string into cost sidecars; one
+name across both repos means the config, the transcript, and the ledger agree.
+
+```jsonc
+{"user_agent":      {"model": {"model": "openrouter:x-ai/grok-4.3"},
+                     "agent_class": "pw_free_trait"},
+ "assistant_agent": [{"model": {"model": "openrouter:openai/gpt-5.4-mini"}}]}
+```
+
+Set `OPENROUTER_API_KEY`. `OPENROUTER_BASE_URL` is set for you at import via
+`setdefault`, so an operator-supplied value always wins — but it must be set
+*somehow*: without `base_url_env`, `ChatOpenAI` silently falls back to
+`api.openai.com`, where an OpenRouter key fails and an ambient `OPENAI_API_KEY`
+would quietly succeed against the wrong vendor at the wrong price.
+
+Prices are transcribed from an owner-verified in-repo source, recorded per spec in
+`price_source` and carried into `ModelSpec.notes`. They are *ceiling-side* numbers
+(list price plus roughly a 5% aggregator margin), so an estimate built on them is
+an upper bound and the provider's invoice is the truth. A slug whose price cannot
+be verified is registered with `None`, and upstream's own rule applies: **None →
+unpriced; cost renders as N/A, never guessed.** Re-verify against OpenRouter's
+live model list before the first fire.
+
+## Tool-calling smoke test (the first thing to spend money on)
+
+PatientAgentBench is agentic. The paper omits models "solely because they lacked
+reliable native tool-calling for agentic workflows", so routing the assistant
+through a new channel risks that capability before it risks anything else — and a
+model that narrates tool use instead of emitting calls produces transcripts that
+look fine and score meaningless. One conversation settles it:
+
+```bash
+python -m patientwords_pab.toolcall_smoke --dry-run          # plan only, $0
+python -m patientwords_pab.toolcall_smoke \
+    --assistant openrouter:openai/gpt-5.4-mini \
+    --report out/pab_toolcall_smoke.report.json
+```
+
+It asserts the transcript holds at least one tool call, that every call names a
+tool the sandbox registered, carries a dict of arguments, and is answered by a
+matching result. Without `OPENROUTER_API_KEY` it skips and exits 0 — it never
+half-runs. The sidecar is written in the measurement engine's established cost
+shape (`run_timestamp`, `model`, `max_spend_usd`, `cost_usd`,
+`usage.per_model{…}`) so that spend folds into the existing ledger, and it drops
+the transcript unless `--with-transcript` is passed, because that file is destined
+for a public repository.
+
+The patient agent has no tools and carries none of this risk. Only the assistant
+under test does.
+
 ## Dry run (free)
 
 Renders exactly what a spec builds, calling no model:
