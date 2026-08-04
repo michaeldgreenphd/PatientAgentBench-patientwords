@@ -1,0 +1,25 @@
+{
+  "_readme": "PatientWords literacy-sweep pilot. Patient, assistant and sandbox route through OpenRouter (OPENROUTER_API_KEY); the jury stays on the direct Anthropic API (ANTHROPIC_API_KEY) because it is the validated instrument and no verified OpenRouter price exists for an Anthropic slug. Run through `python -m patientwords_pab.run`, NOT the upstream console script: agent_class pw_free_trait is registered by importing patientwords_pab, and upstream's entry point does not import it (it raises KeyError first, before any spend). Costed in patientwords-engine/docs/pab_first_probe_costing.md.",
+  "max_turns": 3,
+  "strip_thinking_content": true,
+  "aggregation_method": "average",
+  "assistant_agent": [
+    {
+      "model": {"model": "openrouter:openai/gpt-5.4-mini"},
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-5.4 Mini (OpenRouter)"
+    }
+  ],
+  "user_agent": {
+    "model": {"model": "openrouter:x-ai/grok-4.3"},
+    "prompt": "default_prompt",
+    "agent_class": "pw_free_trait"
+  },
+  "evaluator_model": [
+    {"model": "claude-opus-4.8-api"}
+  ],
+  "sandbox_model": {"model": "openrouter:openai/gpt-5.4-mini"},
+  "seed_generator_model": {"model": "openrouter:openai/gpt-5.4-mini"},
+  "analyzer_model": {"model": "openrouter:openai/gpt-5.4-mini"}
+}
