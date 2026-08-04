@@ -268,7 +268,7 @@ def run_smoke(
 
     # 2. Tools, from the initialised sandbox.
     tool_registry = create_tool_registry(sandbox)
-    tool_names = [t.name for t in tool_registry.get_all()]
+    tool_names = tool_registry.list_tools()
 
     # 3. Assistant under test. Its usage rides on the messages it returns, so
     #    no wrapper is needed (and the react agent gives none to wrap).

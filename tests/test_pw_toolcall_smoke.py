@@ -9,9 +9,11 @@ sidecar -- both repositories are public.
 """
 
 import json
+from unittest.mock import MagicMock
 
 import pytest
 from langchain_core.messages import AIMessage, HumanMessage, ToolMessage
+from langchain_core.tools import BaseTool
 
 from patient_agent_bench.runner.conversation import Conversation
 from patientwords_pab import toolcall_smoke as smoke
@@ -264,14 +266,22 @@ class TestSidecar:
 # Assembly, fully mocked
 # =============================================================================
 
-class _FakeTool:
-    def __init__(self, name):
-        self.name = name
+def _real_registry():
+    """A REAL ToolRegistry holding fake tools.
 
+    The first live run died on `ToolRegistry.get_all()`, a method that does not
+    exist: the fake registry here had invented it, so the mock agreed with the
+    test rather than with upstream. Using the real class means the interface is
+    pinned by upstream, not by this file.
+    """
+    from patient_agent_bench.tools.registry import ToolRegistry
 
-class _FakeRegistry:
-    def get_all(self):
-        return [_FakeTool(n) for n in TOOLS]
+    registry = ToolRegistry()
+    for name in TOOLS:
+        tool = MagicMock(spec=BaseTool)
+        tool.name = name
+        registry.register(tool)
+    return registry
 
 
 class _FakeAssistant:
@@ -339,7 +349,7 @@ def wired(monkeypatch):
     monkeypatch.setattr(smoke, "HealthcareSandbox", lambda: object())
     monkeypatch.setattr(smoke, "create_sandbox_llm", lambda _c, _b: object())
     monkeypatch.setattr(smoke, "initialize_sandbox", _init_sandbox)
-    monkeypatch.setattr(smoke, "create_tool_registry", lambda _s: _FakeRegistry())
+    monkeypatch.setattr(smoke, "create_tool_registry", lambda _s: _real_registry())
     monkeypatch.setattr(smoke, "create_assistant_agent_from_spec",
                         lambda **_kw: _FakeAssistant())
     monkeypatch.setattr(smoke, "create_user_agent_from_spec",
