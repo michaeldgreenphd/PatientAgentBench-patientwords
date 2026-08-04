@@ -50,9 +50,9 @@ class TestFetch:
 
     def test_network_failure_is_an_error_not_a_default(self):
         with patch.object(cat.urllib.request, "urlopen",
-                          side_effect=OSError("no route")):
-            with pytest.raises(cat.CatalogueError, match="cannot fetch"):
-                cat.fetch_catalogue()
+                          side_effect=OSError("no route")), \
+             pytest.raises(cat.CatalogueError, match="cannot fetch"):
+            cat.fetch_catalogue()
 
 
 class TestPricing:
