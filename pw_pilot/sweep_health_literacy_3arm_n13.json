@@ -1,0 +1,4619 @@
+[
+  {
+    "condition_name": "Asthma",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_symptom_assessment",
+    "scenario_id": "2855c72c-1659-4ae1-9469-ebeee1d02d2e--arm0",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 24-year-old female graduate student in Austin, Texas, with a known history of mild persistent asthma managed with a daily inhaled corticosteroid and a rescue inhaler. Over the past ten days, she has noticed a gradual increase in chest tightness and a dry, persistent cough that wakes her up approximately two to three nights per week, which is a change from her usual pattern of only occasional daytime symptoms. She has been using her albuterol rescue inhaler more frequently than normal \u2014 roughly four to five times over the past week \u2014 and attributes the worsening to the recent change in weather and high pollen counts in the area. Priya is concerned that her current controller regimen may no longer be adequate and is also wondering whether she needs a step-up in therapy or if there is another underlying trigger she should address. She strongly prefers to be evaluated in person by her primary care provider so that her lung function can be assessed directly and any necessary adjustments to her treatment plan can be made face-to-face.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "24",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "2000-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Lane",
+          "address2": "Apt 2B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78704",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Albuterol Sulfate HFA Inhaler",
+          "dosage": "90mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-05",
+          "reason": "Asthma - rescue inhaler for acute bronchospasm"
+        },
+        {
+          "id": "med_002",
+          "name": "Fluticasone Propionate Inhaler",
+          "dosage": "44mcg/actuation",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2023-01-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-08-18",
+          "reason": "Asthma - daily inhaled corticosteroid controller therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Cetirizine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-01",
+          "reason": "Allergic rhinitis - contributing trigger for asthma"
+        },
+        {
+          "id": "med_004",
+          "name": "Montelukast",
+          "dosage": "10mg",
+          "frequency": "once daily at bedtime",
+          "status": "past",
+          "prescribed_date": "2022-11-15",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-03-10",
+          "reason": "Asthma - leukotriene modifier (discontinued due to mood-related side effects)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Asthma",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_symptom_assessment",
+    "scenario_id": "2855c72c-1659-4ae1-9469-ebeee1d02d2e--arm1",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 24-year-old female graduate student in Austin, Texas, with a known history of mild persistent asthma managed with a daily inhaled corticosteroid and a rescue inhaler. Over the past ten days, she has noticed a gradual increase in chest tightness and a dry, persistent cough that wakes her up approximately two to three nights per week, which is a change from her usual pattern of only occasional daytime symptoms. She has been using her albuterol rescue inhaler more frequently than normal \u2014 roughly four to five times over the past week \u2014 and attributes the worsening to the recent change in weather and high pollen counts in the area. Priya is concerned that her current controller regimen may no longer be adequate and is also wondering whether she needs a step-up in therapy or if there is another underlying trigger she should address. She strongly prefers to be evaluated in person by her primary care provider so that her lung function can be assessed directly and any necessary adjustments to her treatment plan can be made face-to-face.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "24",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "2000-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Lane",
+          "address2": "Apt 2B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78704",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Albuterol Sulfate HFA Inhaler",
+          "dosage": "90mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-05",
+          "reason": "Asthma - rescue inhaler for acute bronchospasm"
+        },
+        {
+          "id": "med_002",
+          "name": "Fluticasone Propionate Inhaler",
+          "dosage": "44mcg/actuation",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2023-01-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-08-18",
+          "reason": "Asthma - daily inhaled corticosteroid controller therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Cetirizine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-01",
+          "reason": "Allergic rhinitis - contributing trigger for asthma"
+        },
+        {
+          "id": "med_004",
+          "name": "Montelukast",
+          "dosage": "10mg",
+          "frequency": "once daily at bedtime",
+          "status": "past",
+          "prescribed_date": "2022-11-15",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-03-10",
+          "reason": "Asthma - leukotriene modifier (discontinued due to mood-related side effects)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Asthma",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_symptom_assessment",
+    "scenario_id": "2855c72c-1659-4ae1-9469-ebeee1d02d2e--arm3",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 24-year-old female graduate student in Austin, Texas, with a known history of mild persistent asthma managed with a daily inhaled corticosteroid and a rescue inhaler. Over the past ten days, she has noticed a gradual increase in chest tightness and a dry, persistent cough that wakes her up approximately two to three nights per week, which is a change from her usual pattern of only occasional daytime symptoms. She has been using her albuterol rescue inhaler more frequently than normal \u2014 roughly four to five times over the past week \u2014 and attributes the worsening to the recent change in weather and high pollen counts in the area. Priya is concerned that her current controller regimen may no longer be adequate and is also wondering whether she needs a step-up in therapy or if there is another underlying trigger she should address. She strongly prefers to be evaluated in person by her primary care provider so that her lung function can be assessed directly and any necessary adjustments to her treatment plan can be made face-to-face.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "24",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "2000-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Lane",
+          "address2": "Apt 2B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78704",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Albuterol Sulfate HFA Inhaler",
+          "dosage": "90mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-05",
+          "reason": "Asthma - rescue inhaler for acute bronchospasm"
+        },
+        {
+          "id": "med_002",
+          "name": "Fluticasone Propionate Inhaler",
+          "dosage": "44mcg/actuation",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2023-01-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-08-18",
+          "reason": "Asthma - daily inhaled corticosteroid controller therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Cetirizine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-01",
+          "reason": "Allergic rhinitis - contributing trigger for asthma"
+        },
+        {
+          "id": "med_004",
+          "name": "Montelukast",
+          "dosage": "10mg",
+          "frequency": "once daily at bedtime",
+          "status": "past",
+          "prescribed_date": "2022-11-15",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-03-10",
+          "reason": "Asthma - leukotriene modifier (discontinued due to mood-related side effects)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Gastroesophageal reflux disease (GERD)",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "severe",
+    "task_type": "health_concern_mental_health_crisis",
+    "scenario_id": "301ed132-57f2-4aac-a990-73b4667f3a90--arm0",
+    "has_image": "False",
+    "patient_story": "Dolores 'Dolly' Whitfield is a 72-year-old woman with a longstanding history of severe gastroesophageal reflux disease who has experienced a significant worsening of both her physical and emotional health over the past several months. She reports near-daily episodes of severe heartburn, regurgitation, and chest tightness that frequently wake her from sleep, leaving her exhausted and increasingly reluctant to eat, resulting in an unintentional weight loss of approximately 12 pounds over the past three months. Dolly lives alone since the passing of her husband two years ago, and she has confided to her daughter that she has been feeling profoundly hopeless, tearful most days, and has had passive thoughts that she would be better off not waking up \u2014 prompting her daughter to encourage her to seek help immediately. She strongly prefers remote consultations due to limited mobility and anxiety about leaving her apartment, and she is reaching out today via telehealth hoping to speak with someone about both her worsening reflux symptoms and the emotional distress that has become overwhelming. Her gastroenterologist recently recommended an upper endoscopy, which she has been postponing due to fear and low motivation, and her primary care provider has been managing her depression with sertraline, though she feels it is no longer helping.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Dolores",
+        "last_name": "Whitfield",
+        "preferred_name": "Dolly",
+        "dob": "1952-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "dolores.whitfield52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013472891",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Renata",
+          "last_name": "Whitfield",
+          "relationship": "daughter",
+          "phone": "9016583047"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Omeprazole",
+          "dosage": "40mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-05",
+          "reason": "Gastroesophageal reflux disease (GERD)"
+        },
+        {
+          "id": "med_002",
+          "name": "Sucralfate",
+          "dosage": "1g",
+          "frequency": "four times daily",
+          "status": "active",
+          "prescribed_date": "2023-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-18",
+          "reason": "Esophageal mucosal protection / severe GERD"
+        },
+        {
+          "id": "med_003",
+          "name": "Metoclopramide",
+          "dosage": "10mg",
+          "frequency": "three times daily before meals",
+          "status": "active",
+          "prescribed_date": "2023-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-30",
+          "reason": "Gastroparesis / GERD symptom management"
+        },
+        {
+          "id": "med_004",
+          "name": "Sertraline",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Depression / anxiety related to chronic illness"
+        },
+        {
+          "id": "med_005",
+          "name": "Ranitidine",
+          "dosage": "150mg",
+          "frequency": "twice daily",
+          "status": "past",
+          "prescribed_date": "2021-04-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2022-07-20",
+          "reason": "GERD (discontinued, switched to Omeprazole)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Gastroesophageal reflux disease (GERD)",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "severe",
+    "task_type": "health_concern_mental_health_crisis",
+    "scenario_id": "301ed132-57f2-4aac-a990-73b4667f3a90--arm1",
+    "has_image": "False",
+    "patient_story": "Dolores 'Dolly' Whitfield is a 72-year-old woman with a longstanding history of severe gastroesophageal reflux disease who has experienced a significant worsening of both her physical and emotional health over the past several months. She reports near-daily episodes of severe heartburn, regurgitation, and chest tightness that frequently wake her from sleep, leaving her exhausted and increasingly reluctant to eat, resulting in an unintentional weight loss of approximately 12 pounds over the past three months. Dolly lives alone since the passing of her husband two years ago, and she has confided to her daughter that she has been feeling profoundly hopeless, tearful most days, and has had passive thoughts that she would be better off not waking up \u2014 prompting her daughter to encourage her to seek help immediately. She strongly prefers remote consultations due to limited mobility and anxiety about leaving her apartment, and she is reaching out today via telehealth hoping to speak with someone about both her worsening reflux symptoms and the emotional distress that has become overwhelming. Her gastroenterologist recently recommended an upper endoscopy, which she has been postponing due to fear and low motivation, and her primary care provider has been managing her depression with sertraline, though she feels it is no longer helping.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Dolores",
+        "last_name": "Whitfield",
+        "preferred_name": "Dolly",
+        "dob": "1952-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "dolores.whitfield52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013472891",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Renata",
+          "last_name": "Whitfield",
+          "relationship": "daughter",
+          "phone": "9016583047"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Omeprazole",
+          "dosage": "40mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-05",
+          "reason": "Gastroesophageal reflux disease (GERD)"
+        },
+        {
+          "id": "med_002",
+          "name": "Sucralfate",
+          "dosage": "1g",
+          "frequency": "four times daily",
+          "status": "active",
+          "prescribed_date": "2023-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-18",
+          "reason": "Esophageal mucosal protection / severe GERD"
+        },
+        {
+          "id": "med_003",
+          "name": "Metoclopramide",
+          "dosage": "10mg",
+          "frequency": "three times daily before meals",
+          "status": "active",
+          "prescribed_date": "2023-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-30",
+          "reason": "Gastroparesis / GERD symptom management"
+        },
+        {
+          "id": "med_004",
+          "name": "Sertraline",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Depression / anxiety related to chronic illness"
+        },
+        {
+          "id": "med_005",
+          "name": "Ranitidine",
+          "dosage": "150mg",
+          "frequency": "twice daily",
+          "status": "past",
+          "prescribed_date": "2021-04-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2022-07-20",
+          "reason": "GERD (discontinued, switched to Omeprazole)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Gastroesophageal reflux disease (GERD)",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "severe",
+    "task_type": "health_concern_mental_health_crisis",
+    "scenario_id": "301ed132-57f2-4aac-a990-73b4667f3a90--arm3",
+    "has_image": "False",
+    "patient_story": "Dolores 'Dolly' Whitfield is a 72-year-old woman with a longstanding history of severe gastroesophageal reflux disease who has experienced a significant worsening of both her physical and emotional health over the past several months. She reports near-daily episodes of severe heartburn, regurgitation, and chest tightness that frequently wake her from sleep, leaving her exhausted and increasingly reluctant to eat, resulting in an unintentional weight loss of approximately 12 pounds over the past three months. Dolly lives alone since the passing of her husband two years ago, and she has confided to her daughter that she has been feeling profoundly hopeless, tearful most days, and has had passive thoughts that she would be better off not waking up \u2014 prompting her daughter to encourage her to seek help immediately. She strongly prefers remote consultations due to limited mobility and anxiety about leaving her apartment, and she is reaching out today via telehealth hoping to speak with someone about both her worsening reflux symptoms and the emotional distress that has become overwhelming. Her gastroenterologist recently recommended an upper endoscopy, which she has been postponing due to fear and low motivation, and her primary care provider has been managing her depression with sertraline, though she feels it is no longer helping.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Dolores",
+        "last_name": "Whitfield",
+        "preferred_name": "Dolly",
+        "dob": "1952-03-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "dolores.whitfield52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013472891",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Renata",
+          "last_name": "Whitfield",
+          "relationship": "daughter",
+          "phone": "9016583047"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Omeprazole",
+          "dosage": "40mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-05",
+          "reason": "Gastroesophageal reflux disease (GERD)"
+        },
+        {
+          "id": "med_002",
+          "name": "Sucralfate",
+          "dosage": "1g",
+          "frequency": "four times daily",
+          "status": "active",
+          "prescribed_date": "2023-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-18",
+          "reason": "Esophageal mucosal protection / severe GERD"
+        },
+        {
+          "id": "med_003",
+          "name": "Metoclopramide",
+          "dosage": "10mg",
+          "frequency": "three times daily before meals",
+          "status": "active",
+          "prescribed_date": "2023-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-30",
+          "reason": "Gastroparesis / GERD symptom management"
+        },
+        {
+          "id": "med_004",
+          "name": "Sertraline",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Depression / anxiety related to chronic illness"
+        },
+        {
+          "id": "med_005",
+          "name": "Ranitidine",
+          "dosage": "150mg",
+          "frequency": "twice daily",
+          "status": "past",
+          "prescribed_date": "2021-04-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2022-07-20",
+          "reason": "GERD (discontinued, switched to Omeprazole)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Type 2 diabetes with chronic kidney disease",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "medication_medication_interaction",
+    "scenario_id": "3a5b6137-7118-4bb7-bc7a-9a7615f0527c--arm0",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes is a 27-year-old transgender male patient with a two-year history of Type 2 diabetes and moderate chronic kidney disease (CKD Stage 3), currently managed by his endocrinologist and nephrologist in San Antonio, Texas. Over the past several weeks, he has been experiencing increased lower back pain and muscle aches, and has been self-medicating with over-the-counter ibuprofen more frequently than prescribed \u2014 sometimes taking it daily for the past three weeks \u2014 without realizing this may be worsening his kidney function. He is now reporting new symptoms of decreased urine output, mild swelling in his ankles, and fatigue, and is very concerned that something serious may be happening. Marisol is requesting an urgent call from a care provider as soon as possible, as he is anxious about whether his current combination of medications \u2014 particularly the ibuprofen alongside his lisinopril and metformin \u2014 could be causing harm to his kidneys. His care team has not yet been notified of the increased NSAID use, and he is hoping to get immediate guidance before his next scheduled nephrology appointment in three weeks.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "San Antonio",
+          "state": "TX",
+          "zip": "78251",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2105559347",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "2105558821"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicaid",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-01",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-15",
+          "reason": "Chronic kidney disease / hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "active",
+          "prescribed_date": "2024-09-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-10",
+          "reason": "Musculoskeletal pain"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous Sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-11-14",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-20",
+          "reason": "Anemia associated with chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Glipizide",
+          "dosage": "5mg",
+          "frequency": "once daily before breakfast",
+          "status": "past",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-01-05",
+          "reason": "Type 2 diabetes (discontinued due to hypoglycemia episodes)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Type 2 diabetes with chronic kidney disease",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "medication_medication_interaction",
+    "scenario_id": "3a5b6137-7118-4bb7-bc7a-9a7615f0527c--arm1",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes is a 27-year-old transgender male patient with a two-year history of Type 2 diabetes and moderate chronic kidney disease (CKD Stage 3), currently managed by his endocrinologist and nephrologist in San Antonio, Texas. Over the past several weeks, he has been experiencing increased lower back pain and muscle aches, and has been self-medicating with over-the-counter ibuprofen more frequently than prescribed \u2014 sometimes taking it daily for the past three weeks \u2014 without realizing this may be worsening his kidney function. He is now reporting new symptoms of decreased urine output, mild swelling in his ankles, and fatigue, and is very concerned that something serious may be happening. Marisol is requesting an urgent call from a care provider as soon as possible, as he is anxious about whether his current combination of medications \u2014 particularly the ibuprofen alongside his lisinopril and metformin \u2014 could be causing harm to his kidneys. His care team has not yet been notified of the increased NSAID use, and he is hoping to get immediate guidance before his next scheduled nephrology appointment in three weeks.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "San Antonio",
+          "state": "TX",
+          "zip": "78251",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2105559347",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "2105558821"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicaid",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-01",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-15",
+          "reason": "Chronic kidney disease / hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "active",
+          "prescribed_date": "2024-09-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-10",
+          "reason": "Musculoskeletal pain"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous Sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-11-14",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-20",
+          "reason": "Anemia associated with chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Glipizide",
+          "dosage": "5mg",
+          "frequency": "once daily before breakfast",
+          "status": "past",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-01-05",
+          "reason": "Type 2 diabetes (discontinued due to hypoglycemia episodes)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Type 2 diabetes with chronic kidney disease",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "medication_medication_interaction",
+    "scenario_id": "3a5b6137-7118-4bb7-bc7a-9a7615f0527c--arm3",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes is a 27-year-old transgender male patient with a two-year history of Type 2 diabetes and moderate chronic kidney disease (CKD Stage 3), currently managed by his endocrinologist and nephrologist in San Antonio, Texas. Over the past several weeks, he has been experiencing increased lower back pain and muscle aches, and has been self-medicating with over-the-counter ibuprofen more frequently than prescribed \u2014 sometimes taking it daily for the past three weeks \u2014 without realizing this may be worsening his kidney function. He is now reporting new symptoms of decreased urine output, mild swelling in his ankles, and fatigue, and is very concerned that something serious may be happening. Marisol is requesting an urgent call from a care provider as soon as possible, as he is anxious about whether his current combination of medications \u2014 particularly the ibuprofen alongside his lisinopril and metformin \u2014 could be causing harm to his kidneys. His care team has not yet been notified of the increased NSAID use, and he is hoping to get immediate guidance before his next scheduled nephrology appointment in three weeks.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "San Antonio",
+          "state": "TX",
+          "zip": "78251",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2105559347",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "2105558821"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicaid",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-01",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-10-15",
+          "reason": "Chronic kidney disease / hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "active",
+          "prescribed_date": "2024-09-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-10",
+          "reason": "Musculoskeletal pain"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous Sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-11-14",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-20",
+          "reason": "Anemia associated with chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Glipizide",
+          "dosage": "5mg",
+          "frequency": "once daily before breakfast",
+          "status": "past",
+          "prescribed_date": "2022-08-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-01-05",
+          "reason": "Type 2 diabetes (discontinued due to hypoglycemia episodes)"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Arthritis",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "430de052-0cc2-49d3-93e5-0b9262abf92f--arm0",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 27-year-old woman with a known diagnosis of moderate rheumatoid arthritis, managed over the past year and a half by her rheumatologist with hydroxychloroquine and naproxen. Over the past 48 hours, she has developed sudden, severe swelling and intense warmth in her right knee that is markedly worse than her typical flares, accompanied by a low-grade fever of 100.8\u00b0F and difficulty bearing weight on the affected leg. She is concerned that this may represent something more serious than a routine flare, such as a joint infection or septic arthritis, and is anxious to be evaluated in person as soon as possible rather than managing it remotely. Priya strongly prefers an in-person visit with her rheumatologist or an urgent care provider who can physically examine the joint, and she is prepared to go to an emergency setting if advised. She has not experienced trauma to the knee and has been adherent to her current medication regimen, making this acute presentation particularly alarming to her.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "woman",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78749",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124739021",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "mother",
+          "phone": "5128840673"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naproxen",
+          "dosage": "500mg",
+          "frequency": "twice daily with food",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-05-01",
+          "reason": "Rheumatoid arthritis inflammation and pain management"
+        },
+        {
+          "id": "med_002",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-04-15",
+          "reason": "Rheumatoid arthritis disease-modifying therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily during flares",
+          "status": "active",
+          "prescribed_date": "2025-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2025-03-05",
+          "reason": "Short-term management of arthritis flare"
+        },
+        {
+          "id": "med_004",
+          "name": "Folic Acid",
+          "dosage": "1mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-04-15",
+          "reason": "Supplement to support disease-modifying therapy"
+        },
+        {
+          "id": "med_005",
+          "name": "Meloxicam",
+          "dosage": "15mg",
+          "frequency": "once daily",
+          "status": "past",
+          "prescribed_date": "2023-09-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-12-01",
+          "reason": "Prior NSAID trial for arthritis pain, discontinued due to switch to Naproxen"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Arthritis",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "430de052-0cc2-49d3-93e5-0b9262abf92f--arm1",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 27-year-old woman with a known diagnosis of moderate rheumatoid arthritis, managed over the past year and a half by her rheumatologist with hydroxychloroquine and naproxen. Over the past 48 hours, she has developed sudden, severe swelling and intense warmth in her right knee that is markedly worse than her typical flares, accompanied by a low-grade fever of 100.8\u00b0F and difficulty bearing weight on the affected leg. She is concerned that this may represent something more serious than a routine flare, such as a joint infection or septic arthritis, and is anxious to be evaluated in person as soon as possible rather than managing it remotely. Priya strongly prefers an in-person visit with her rheumatologist or an urgent care provider who can physically examine the joint, and she is prepared to go to an emergency setting if advised. She has not experienced trauma to the knee and has been adherent to her current medication regimen, making this acute presentation particularly alarming to her.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "woman",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78749",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124739021",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "mother",
+          "phone": "5128840673"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naproxen",
+          "dosage": "500mg",
+          "frequency": "twice daily with food",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-05-01",
+          "reason": "Rheumatoid arthritis inflammation and pain management"
+        },
+        {
+          "id": "med_002",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-04-15",
+          "reason": "Rheumatoid arthritis disease-modifying therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily during flares",
+          "status": "active",
+          "prescribed_date": "2025-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2025-03-05",
+          "reason": "Short-term management of arthritis flare"
+        },
+        {
+          "id": "med_004",
+          "name": "Folic Acid",
+          "dosage": "1mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-04-15",
+          "reason": "Supplement to support disease-modifying therapy"
+        },
+        {
+          "id": "med_005",
+          "name": "Meloxicam",
+          "dosage": "15mg",
+          "frequency": "once daily",
+          "status": "past",
+          "prescribed_date": "2023-09-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-12-01",
+          "reason": "Prior NSAID trial for arthritis pain, discontinued due to switch to Naproxen"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Arthritis",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "430de052-0cc2-49d3-93e5-0b9262abf92f--arm3",
+    "has_image": "False",
+    "patient_story": "Priya Nambiar is a 27-year-old woman with a known diagnosis of moderate rheumatoid arthritis, managed over the past year and a half by her rheumatologist with hydroxychloroquine and naproxen. Over the past 48 hours, she has developed sudden, severe swelling and intense warmth in her right knee that is markedly worse than her typical flares, accompanied by a low-grade fever of 100.8\u00b0F and difficulty bearing weight on the affected leg. She is concerned that this may represent something more serious than a routine flare, such as a joint infection or septic arthritis, and is anxious to be evaluated in person as soon as possible rather than managing it remotely. Priya strongly prefers an in-person visit with her rheumatologist or an urgent care provider who can physically examine the joint, and she is prepared to go to an emergency setting if advised. She has not experienced trauma to the knee and has been adherent to her current medication regimen, making this acute presentation particularly alarming to her.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Priya",
+        "last_name": "Nambiar",
+        "preferred_name": "Pri",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "woman",
+        "pronouns": "she/her",
+        "email": "priya.nambiar@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westover Hills Blvd",
+          "address2": "Apt 206",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78749",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124739021",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Anita",
+          "last_name": "Nambiar",
+          "relationship": "mother",
+          "phone": "5128840673"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naproxen",
+          "dosage": "500mg",
+          "frequency": "twice daily with food",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-05-01",
+          "reason": "Rheumatoid arthritis inflammation and pain management"
+        },
+        {
+          "id": "med_002",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-04-15",
+          "reason": "Rheumatoid arthritis disease-modifying therapy"
+        },
+        {
+          "id": "med_003",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily during flares",
+          "status": "active",
+          "prescribed_date": "2025-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 1,
+          "last_filled": "2025-03-05",
+          "reason": "Short-term management of arthritis flare"
+        },
+        {
+          "id": "med_004",
+          "name": "Folic Acid",
+          "dosage": "1mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-02-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-04-15",
+          "reason": "Supplement to support disease-modifying therapy"
+        },
+        {
+          "id": "med_005",
+          "name": "Meloxicam",
+          "dosage": "15mg",
+          "frequency": "once daily",
+          "status": "past",
+          "prescribed_date": "2023-09-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-12-01",
+          "reason": "Prior NSAID trial for arthritis pain, discontinued due to switch to Naproxen"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Irritable bowel syndrome (IBS)",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "4a326ff4-3fbc-468d-909f-c2b4f81469f9--arm0",
+    "has_image": "False",
+    "patient_story": "Rowan Castellanos is a 14-year-old transgender male with a known diagnosis of moderate irritable bowel syndrome (IBS-C), managed over the past year and a half by his pediatric gastroenterologist. Over the past 18 hours, Rowan has developed significantly worsening abdominal pain that is more severe and localized to the lower right quadrant than his typical diffuse cramping, accompanied by a low-grade fever of 100.8\u00b0F, nausea, and one episode of vomiting \u2014 symptoms that are distinctly different from his usual IBS flares. His mother, Maria, is alarmed by the change in character and location of the pain and is urgently requesting a phone call from a clinical provider to determine whether Rowan needs to be evaluated in the emergency department or if this could represent a serious complication such as appendicitis. Rowan has taken his prescribed hyoscyamine without relief, which is further concerning to the family given that it has historically helped manage his cramping episodes.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Rowan",
+        "last_name": "Castellanos",
+        "preferred_name": "Ro",
+        "dob": "2010-03-17",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "castellanos.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Elmwood Drive",
+          "address2": "",
+          "city": "Naperville",
+          "state": "IL",
+          "zip": "60540",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6305557284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Castellanos",
+          "relationship": "parent",
+          "phone": "6305559031"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Illinois",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hyoscyamine",
+          "dosage": "0.125mg",
+          "frequency": "as needed, up to four times daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-20",
+          "reason": "IBS-related abdominal cramping and spasms"
+        },
+        {
+          "id": "med_002",
+          "name": "Polyethylene Glycol 3350 (MiraLAX)",
+          "dosage": "17g",
+          "frequency": "once daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-14",
+          "reason": "IBS-C constipation management"
+        },
+        {
+          "id": "med_003",
+          "name": "Simethicone",
+          "dosage": "80mg",
+          "frequency": "up to four times daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-11-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2024-09-30",
+          "reason": "IBS-related bloating and gas"
+        },
+        {
+          "id": "med_004",
+          "name": "Cyproheptadine",
+          "dosage": "2mg",
+          "frequency": "once nightly",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-09-01",
+          "reason": "Appetite stimulation and abdominal pain management"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Irritable bowel syndrome (IBS)",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "4a326ff4-3fbc-468d-909f-c2b4f81469f9--arm1",
+    "has_image": "False",
+    "patient_story": "Rowan Castellanos is a 14-year-old transgender male with a known diagnosis of moderate irritable bowel syndrome (IBS-C), managed over the past year and a half by his pediatric gastroenterologist. Over the past 18 hours, Rowan has developed significantly worsening abdominal pain that is more severe and localized to the lower right quadrant than his typical diffuse cramping, accompanied by a low-grade fever of 100.8\u00b0F, nausea, and one episode of vomiting \u2014 symptoms that are distinctly different from his usual IBS flares. His mother, Maria, is alarmed by the change in character and location of the pain and is urgently requesting a phone call from a clinical provider to determine whether Rowan needs to be evaluated in the emergency department or if this could represent a serious complication such as appendicitis. Rowan has taken his prescribed hyoscyamine without relief, which is further concerning to the family given that it has historically helped manage his cramping episodes.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Rowan",
+        "last_name": "Castellanos",
+        "preferred_name": "Ro",
+        "dob": "2010-03-17",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "castellanos.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Elmwood Drive",
+          "address2": "",
+          "city": "Naperville",
+          "state": "IL",
+          "zip": "60540",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6305557284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Castellanos",
+          "relationship": "parent",
+          "phone": "6305559031"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Illinois",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hyoscyamine",
+          "dosage": "0.125mg",
+          "frequency": "as needed, up to four times daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-20",
+          "reason": "IBS-related abdominal cramping and spasms"
+        },
+        {
+          "id": "med_002",
+          "name": "Polyethylene Glycol 3350 (MiraLAX)",
+          "dosage": "17g",
+          "frequency": "once daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-14",
+          "reason": "IBS-C constipation management"
+        },
+        {
+          "id": "med_003",
+          "name": "Simethicone",
+          "dosage": "80mg",
+          "frequency": "up to four times daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-11-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2024-09-30",
+          "reason": "IBS-related bloating and gas"
+        },
+        {
+          "id": "med_004",
+          "name": "Cyproheptadine",
+          "dosage": "2mg",
+          "frequency": "once nightly",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-09-01",
+          "reason": "Appetite stimulation and abdominal pain management"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Irritable bowel syndrome (IBS)",
+    "preferred_care_option": "urgent call",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "4a326ff4-3fbc-468d-909f-c2b4f81469f9--arm3",
+    "has_image": "False",
+    "patient_story": "Rowan Castellanos is a 14-year-old transgender male with a known diagnosis of moderate irritable bowel syndrome (IBS-C), managed over the past year and a half by his pediatric gastroenterologist. Over the past 18 hours, Rowan has developed significantly worsening abdominal pain that is more severe and localized to the lower right quadrant than his typical diffuse cramping, accompanied by a low-grade fever of 100.8\u00b0F, nausea, and one episode of vomiting \u2014 symptoms that are distinctly different from his usual IBS flares. His mother, Maria, is alarmed by the change in character and location of the pain and is urgently requesting a phone call from a clinical provider to determine whether Rowan needs to be evaluated in the emergency department or if this could represent a serious complication such as appendicitis. Rowan has taken his prescribed hyoscyamine without relief, which is further concerning to the family given that it has historically helped manage his cramping episodes.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Rowan",
+        "last_name": "Castellanos",
+        "preferred_name": "Ro",
+        "dob": "2010-03-17",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "castellanos.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Elmwood Drive",
+          "address2": "",
+          "city": "Naperville",
+          "state": "IL",
+          "zip": "60540",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6305557284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Castellanos",
+          "relationship": "parent",
+          "phone": "6305559031"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Illinois",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hyoscyamine",
+          "dosage": "0.125mg",
+          "frequency": "as needed, up to four times daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-20",
+          "reason": "IBS-related abdominal cramping and spasms"
+        },
+        {
+          "id": "med_002",
+          "name": "Polyethylene Glycol 3350 (MiraLAX)",
+          "dosage": "17g",
+          "frequency": "once daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-14",
+          "reason": "IBS-C constipation management"
+        },
+        {
+          "id": "med_003",
+          "name": "Simethicone",
+          "dosage": "80mg",
+          "frequency": "up to four times daily as needed",
+          "status": "active",
+          "prescribed_date": "2023-11-12",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2024-09-30",
+          "reason": "IBS-related bloating and gas"
+        },
+        {
+          "id": "med_004",
+          "name": "Cyproheptadine",
+          "dosage": "2mg",
+          "frequency": "once nightly",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-09-01",
+          "reason": "Appetite stimulation and abdominal pain management"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Insomnia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "provider_access_referral_request",
+    "scenario_id": "50648633-7984-424d-aa07-51b6ba14cb28--arm0",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 26-year-old male software developer who presents with a several-month history of mild insomnia, primarily characterized by difficulty falling asleep at night, typically lying awake for 60 to 90 minutes before sleep onset, occurring approximately four to five nights per week. He reports that his symptoms began around mid-2024 and correlates the onset with increased work-from-home demands and irregular screen time habits, though he denies significant daytime impairment beyond mild fatigue and occasional difficulty concentrating during afternoon hours. He has been self-managing with over-the-counter melatonin with partial benefit and previously trialed diphenhydramine, which he discontinued due to next-day grogginess. Marcus is now seeking a referral to a sleep specialist or behavioral health provider experienced in cognitive behavioral therapy for insomnia (CBT-I), as he prefers to avoid long-term pharmacological management and would like to address the root behavioral contributors. Given his busy schedule and comfort with technology, he strongly prefers a remote consultation or telehealth referral to minimize disruption to his work routine.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "26",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "1998-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marc.oyelaran@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Ave",
+          "address2": "Apt 3B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78745",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Melatonin",
+          "dosage": "5mg",
+          "frequency": "once nightly at bedtime",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-01-15",
+          "reason": "Insomnia - sleep onset difficulty"
+        },
+        {
+          "id": "med_002",
+          "name": "Diphenhydramine",
+          "dosage": "25mg",
+          "frequency": "as needed at bedtime",
+          "status": "past",
+          "prescribed_date": "2024-06-22",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2024-08-01",
+          "reason": "Short-term sleep aid"
+        },
+        {
+          "id": "med_003",
+          "name": "Loratadine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-20",
+          "reason": "Seasonal allergic rhinitis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "regular",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Insomnia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "provider_access_referral_request",
+    "scenario_id": "50648633-7984-424d-aa07-51b6ba14cb28--arm1",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 26-year-old male software developer who presents with a several-month history of mild insomnia, primarily characterized by difficulty falling asleep at night, typically lying awake for 60 to 90 minutes before sleep onset, occurring approximately four to five nights per week. He reports that his symptoms began around mid-2024 and correlates the onset with increased work-from-home demands and irregular screen time habits, though he denies significant daytime impairment beyond mild fatigue and occasional difficulty concentrating during afternoon hours. He has been self-managing with over-the-counter melatonin with partial benefit and previously trialed diphenhydramine, which he discontinued due to next-day grogginess. Marcus is now seeking a referral to a sleep specialist or behavioral health provider experienced in cognitive behavioral therapy for insomnia (CBT-I), as he prefers to avoid long-term pharmacological management and would like to address the root behavioral contributors. Given his busy schedule and comfort with technology, he strongly prefers a remote consultation or telehealth referral to minimize disruption to his work routine.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "26",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "1998-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marc.oyelaran@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Ave",
+          "address2": "Apt 3B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78745",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Melatonin",
+          "dosage": "5mg",
+          "frequency": "once nightly at bedtime",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-01-15",
+          "reason": "Insomnia - sleep onset difficulty"
+        },
+        {
+          "id": "med_002",
+          "name": "Diphenhydramine",
+          "dosage": "25mg",
+          "frequency": "as needed at bedtime",
+          "status": "past",
+          "prescribed_date": "2024-06-22",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2024-08-01",
+          "reason": "Short-term sleep aid"
+        },
+        {
+          "id": "med_003",
+          "name": "Loratadine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-20",
+          "reason": "Seasonal allergic rhinitis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "regular",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Insomnia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "provider_access_referral_request",
+    "scenario_id": "50648633-7984-424d-aa07-51b6ba14cb28--arm3",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 26-year-old male software developer who presents with a several-month history of mild insomnia, primarily characterized by difficulty falling asleep at night, typically lying awake for 60 to 90 minutes before sleep onset, occurring approximately four to five nights per week. He reports that his symptoms began around mid-2024 and correlates the onset with increased work-from-home demands and irregular screen time habits, though he denies significant daytime impairment beyond mild fatigue and occasional difficulty concentrating during afternoon hours. He has been self-managing with over-the-counter melatonin with partial benefit and previously trialed diphenhydramine, which he discontinued due to next-day grogginess. Marcus is now seeking a referral to a sleep specialist or behavioral health provider experienced in cognitive behavioral therapy for insomnia (CBT-I), as he prefers to avoid long-term pharmacological management and would like to address the root behavioral contributors. Given his busy schedule and comfort with technology, he strongly prefers a remote consultation or telehealth referral to minimize disruption to his work routine.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "26",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "1998-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marc.oyelaran@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Maple Grove Ave",
+          "address2": "Apt 3B",
+          "city": "Austin",
+          "state": "TX",
+          "zip": "78745",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5124839201",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "parent",
+          "phone": "5128476630"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Melatonin",
+          "dosage": "5mg",
+          "frequency": "once nightly at bedtime",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-01-15",
+          "reason": "Insomnia - sleep onset difficulty"
+        },
+        {
+          "id": "med_002",
+          "name": "Diphenhydramine",
+          "dosage": "25mg",
+          "frequency": "as needed at bedtime",
+          "status": "past",
+          "prescribed_date": "2024-06-22",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2024-08-01",
+          "reason": "Short-term sleep aid"
+        },
+        {
+          "id": "med_003",
+          "name": "Loratadine",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-20",
+          "reason": "Seasonal allergic rhinitis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "regular",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Hypertension with type 2 diabetes, hyperlipidemia, and GERD",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "a45f3362-bb56-4f77-bf7e-8b2a37709b2c--arm0",
+    "has_image": "False",
+    "patient_story": "Jordan Reyes is a 52-year-old transgender male patient with a known history of hypertension, type 2 diabetes, hyperlipidemia, and GERD who presents with a new concern of mild but persistent lower back pain that has been ongoing for approximately three weeks, which he attributes to long hours sitting at his desk job. He reports the pain as a dull ache rated 3-4 out of 10, worsening toward the end of the workday and occasionally disrupting his sleep, but denying any radiation down the legs, numbness, or weakness. Jordan is concerned about managing this pain safely given his existing conditions, particularly because he recalls his previous use of ibuprofen was discontinued due to concerns about its interaction with his blood pressure and stomach issues, and he is unsure what alternatives are appropriate for him. He strongly prefers an in-person visit with his PCP to discuss safe pain management options, review his current medication regimen, and ensure that any new treatment does not adversely affect his blood pressure control, blood sugar levels, or GERD symptoms. Jordan is generally adherent to his medications and follows up regularly with his care team, but feels he needs a face-to-face evaluation to address this new concern comprehensively.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "52",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Jordan",
+        "last_name": "Reyes",
+        "preferred_name": "Jordan",
+        "dob": "1972-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "jordan.reyes72@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Maple Grove Drive",
+          "address2": "Apt 2B",
+          "city": "Kansas City",
+          "state": "MO",
+          "zip": "64112",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "8165554293",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Reyes",
+          "relationship": "spouse",
+          "phone": "8165557841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-11-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2021-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-18",
+          "reason": "Hyperlipidemia"
+        },
+        {
+          "id": "med_004",
+          "name": "Omeprazole",
+          "dosage": "20mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-03-08",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-18",
+          "reason": "GERD"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-08-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-08-15",
+          "reason": "Musculoskeletal pain"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Hypertension with type 2 diabetes, hyperlipidemia, and GERD",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "a45f3362-bb56-4f77-bf7e-8b2a37709b2c--arm1",
+    "has_image": "False",
+    "patient_story": "Jordan Reyes is a 52-year-old transgender male patient with a known history of hypertension, type 2 diabetes, hyperlipidemia, and GERD who presents with a new concern of mild but persistent lower back pain that has been ongoing for approximately three weeks, which he attributes to long hours sitting at his desk job. He reports the pain as a dull ache rated 3-4 out of 10, worsening toward the end of the workday and occasionally disrupting his sleep, but denying any radiation down the legs, numbness, or weakness. Jordan is concerned about managing this pain safely given his existing conditions, particularly because he recalls his previous use of ibuprofen was discontinued due to concerns about its interaction with his blood pressure and stomach issues, and he is unsure what alternatives are appropriate for him. He strongly prefers an in-person visit with his PCP to discuss safe pain management options, review his current medication regimen, and ensure that any new treatment does not adversely affect his blood pressure control, blood sugar levels, or GERD symptoms. Jordan is generally adherent to his medications and follows up regularly with his care team, but feels he needs a face-to-face evaluation to address this new concern comprehensively.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "52",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Jordan",
+        "last_name": "Reyes",
+        "preferred_name": "Jordan",
+        "dob": "1972-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "jordan.reyes72@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Maple Grove Drive",
+          "address2": "Apt 2B",
+          "city": "Kansas City",
+          "state": "MO",
+          "zip": "64112",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "8165554293",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Reyes",
+          "relationship": "spouse",
+          "phone": "8165557841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-11-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2021-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-18",
+          "reason": "Hyperlipidemia"
+        },
+        {
+          "id": "med_004",
+          "name": "Omeprazole",
+          "dosage": "20mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-03-08",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-18",
+          "reason": "GERD"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-08-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-08-15",
+          "reason": "Musculoskeletal pain"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Hypertension with type 2 diabetes, hyperlipidemia, and GERD",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "a45f3362-bb56-4f77-bf7e-8b2a37709b2c--arm3",
+    "has_image": "False",
+    "patient_story": "Jordan Reyes is a 52-year-old transgender male patient with a known history of hypertension, type 2 diabetes, hyperlipidemia, and GERD who presents with a new concern of mild but persistent lower back pain that has been ongoing for approximately three weeks, which he attributes to long hours sitting at his desk job. He reports the pain as a dull ache rated 3-4 out of 10, worsening toward the end of the workday and occasionally disrupting his sleep, but denying any radiation down the legs, numbness, or weakness. Jordan is concerned about managing this pain safely given his existing conditions, particularly because he recalls his previous use of ibuprofen was discontinued due to concerns about its interaction with his blood pressure and stomach issues, and he is unsure what alternatives are appropriate for him. He strongly prefers an in-person visit with his PCP to discuss safe pain management options, review his current medication regimen, and ensure that any new treatment does not adversely affect his blood pressure control, blood sugar levels, or GERD symptoms. Jordan is generally adherent to his medications and follows up regularly with his care team, but feels he needs a face-to-face evaluation to address this new concern comprehensively.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "52",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Jordan",
+        "last_name": "Reyes",
+        "preferred_name": "Jordan",
+        "dob": "1972-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "jordan.reyes72@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Maple Grove Drive",
+          "address2": "Apt 2B",
+          "city": "Kansas City",
+          "state": "MO",
+          "zip": "64112",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "8165554293",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Maria",
+          "last_name": "Reyes",
+          "relationship": "spouse",
+          "phone": "8165557841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "500mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-11-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Atorvastatin",
+          "dosage": "20mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2021-01-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-18",
+          "reason": "Hyperlipidemia"
+        },
+        {
+          "id": "med_004",
+          "name": "Omeprazole",
+          "dosage": "20mg",
+          "frequency": "once daily before breakfast",
+          "status": "active",
+          "prescribed_date": "2022-03-08",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-18",
+          "reason": "GERD"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-08-01",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-08-15",
+          "reason": "Musculoskeletal pain"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Lupus (SLE) with nephritis and anemia",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "ae13749a-edf8-4344-b7aa-59159871b2e5--arm0",
+    "has_image": "False",
+    "patient_story": "Ray Okafor is a 72-year-old transgender woman with a longstanding diagnosis of moderate systemic lupus erythematosus complicated by lupus nephritis and chronic anemia, who presents today with an urgent concern about new and worsening symptoms over the past 48 hours. She reports a sudden increase in bilateral lower extremity swelling extending to the knees, decreased urine output, and foamy urine, which she recognizes as potential signs of a nephritis flare; she is also experiencing significant fatigue, shortness of breath with minimal exertion, and a new facial rash that has spread beyond her typical malar distribution. Ray's spouse called her rheumatologist's office this morning but was unable to reach anyone directly, and Ray is now requesting an in-person evaluation as soon as possible because she is deeply concerned these symptoms may represent a serious flare or acute kidney injury requiring immediate assessment. She has been adherent to her current medication regimen including hydroxychloroquine, mycophenolate mofetil, prednisone, ferrous sulfate, and lisinopril, but notes she ran a low-grade fever of 99.8\u00b0F last night and has had a mild headache since yesterday, raising concern for possible infection or disease exacerbation that warrants urgent in-person clinical evaluation and laboratory workup.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Raymond",
+        "last_name": "Okafor",
+        "preferred_name": "Ray",
+        "dob": "1952-03-14",
+        "sex": "male",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "ray.okafor52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "9016523841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "UnitedHealthcare Medicare Advantage",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Systemic lupus erythematosus (SLE)"
+        },
+        {
+          "id": "med_002",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-18",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-15",
+          "reason": "SLE flare and lupus nephritis inflammation"
+        },
+        {
+          "id": "med_003",
+          "name": "Mycophenolate mofetil",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-28",
+          "reason": "Lupus nephritis immunosuppression"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Anemia secondary to SLE and chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2022-07-30",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-20",
+          "reason": "Proteinuria management in lupus nephritis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Lupus (SLE) with nephritis and anemia",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "ae13749a-edf8-4344-b7aa-59159871b2e5--arm1",
+    "has_image": "False",
+    "patient_story": "Ray Okafor is a 72-year-old transgender woman with a longstanding diagnosis of moderate systemic lupus erythematosus complicated by lupus nephritis and chronic anemia, who presents today with an urgent concern about new and worsening symptoms over the past 48 hours. She reports a sudden increase in bilateral lower extremity swelling extending to the knees, decreased urine output, and foamy urine, which she recognizes as potential signs of a nephritis flare; she is also experiencing significant fatigue, shortness of breath with minimal exertion, and a new facial rash that has spread beyond her typical malar distribution. Ray's spouse called her rheumatologist's office this morning but was unable to reach anyone directly, and Ray is now requesting an in-person evaluation as soon as possible because she is deeply concerned these symptoms may represent a serious flare or acute kidney injury requiring immediate assessment. She has been adherent to her current medication regimen including hydroxychloroquine, mycophenolate mofetil, prednisone, ferrous sulfate, and lisinopril, but notes she ran a low-grade fever of 99.8\u00b0F last night and has had a mild headache since yesterday, raising concern for possible infection or disease exacerbation that warrants urgent in-person clinical evaluation and laboratory workup.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Raymond",
+        "last_name": "Okafor",
+        "preferred_name": "Ray",
+        "dob": "1952-03-14",
+        "sex": "male",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "ray.okafor52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "9016523841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "UnitedHealthcare Medicare Advantage",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Systemic lupus erythematosus (SLE)"
+        },
+        {
+          "id": "med_002",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-18",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-15",
+          "reason": "SLE flare and lupus nephritis inflammation"
+        },
+        {
+          "id": "med_003",
+          "name": "Mycophenolate mofetil",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-28",
+          "reason": "Lupus nephritis immunosuppression"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Anemia secondary to SLE and chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2022-07-30",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-20",
+          "reason": "Proteinuria management in lupus nephritis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Lupus (SLE) with nephritis and anemia",
+    "preferred_care_option": "in person visit",
+    "severity_level": "moderate",
+    "task_type": "health_concern_emergency_symptoms",
+    "scenario_id": "ae13749a-edf8-4344-b7aa-59159871b2e5--arm3",
+    "has_image": "False",
+    "patient_story": "Ray Okafor is a 72-year-old transgender woman with a longstanding diagnosis of moderate systemic lupus erythematosus complicated by lupus nephritis and chronic anemia, who presents today with an urgent concern about new and worsening symptoms over the past 48 hours. She reports a sudden increase in bilateral lower extremity swelling extending to the knees, decreased urine output, and foamy urine, which she recognizes as potential signs of a nephritis flare; she is also experiencing significant fatigue, shortness of breath with minimal exertion, and a new facial rash that has spread beyond her typical malar distribution. Ray's spouse called her rheumatologist's office this morning but was unable to reach anyone directly, and Ray is now requesting an in-person evaluation as soon as possible because she is deeply concerned these symptoms may represent a serious flare or acute kidney injury requiring immediate assessment. She has been adherent to her current medication regimen including hydroxychloroquine, mycophenolate mofetil, prednisone, ferrous sulfate, and lisinopril, but notes she ran a low-grade fever of 99.8\u00b0F last night and has had a mild headache since yesterday, raising concern for possible infection or disease exacerbation that warrants urgent in-person clinical evaluation and laboratory workup.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "72",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Raymond",
+        "last_name": "Okafor",
+        "preferred_name": "Ray",
+        "dob": "1952-03-14",
+        "sex": "male",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "ray.okafor52@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4817 Magnolia Creek Drive",
+          "address2": "Apt 2B",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38117",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "9016523841"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "UnitedHealthcare Medicare Advantage",
+          "plan_type": "HMO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Hydroxychloroquine",
+          "dosage": "200mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-01",
+          "reason": "Systemic lupus erythematosus (SLE)"
+        },
+        {
+          "id": "med_002",
+          "name": "Prednisone",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2023-02-18",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-09-15",
+          "reason": "SLE flare and lupus nephritis inflammation"
+        },
+        {
+          "id": "med_003",
+          "name": "Mycophenolate mofetil",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2021-11-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-28",
+          "reason": "Lupus nephritis immunosuppression"
+        },
+        {
+          "id": "med_004",
+          "name": "Ferrous sulfate",
+          "dosage": "325mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-04-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-10-05",
+          "reason": "Anemia secondary to SLE and chronic kidney disease"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "5mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2022-07-30",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-09-20",
+          "reason": "Proteinuria management in lupus nephritis"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Coronary artery disease with type 2 diabetes and hyperlipidemia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "moderate",
+    "task_type": "health_concern_preventive_care",
+    "scenario_id": "b24980e6-a947-4b81-a68f-5149fa2f2236--arm0",
+    "has_image": "False",
+    "patient_story": "Marcus Okafor is a 54-year-old male with a known history of moderate coronary artery disease, type 2 diabetes mellitus, and hyperlipidemia, all diagnosed within the past five years following a stress test that revealed reduced myocardial perfusion during a routine workup for exertional chest tightness. He has been managed medically by his cardiologist and primary care physician, with his most recent HbA1c at 7.4% and LDL at 98 mg/dL, reflecting partial but not optimal control of his metabolic risk factors. Over the past several weeks, Marcus has noticed increased fatigue with moderate physical activity, occasional mild shortness of breath when climbing stairs, and some difficulty maintaining his recommended low-sodium, low-glycemic diet due to a demanding work schedule as a logistics manager. He strongly prefers remote consultations given his irregular work hours and limited ability to take time off, and he is reaching out today to discuss preventive strategies \u2014 including whether his current medication regimen needs adjustment, guidance on cardiac rehabilitation options available via telehealth, and how to better monitor his blood glucose and lipid trends at home. He is motivated to reduce his long-term cardiovascular risk and is particularly concerned about whether his current symptom changes warrant urgent evaluation or can be addressed through his scheduled virtual follow-up with his cardiologist.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "54",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Okafor",
+        "preferred_name": "Marc",
+        "dob": "1970-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marcus.okafor@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Ridgewood Drive",
+          "address2": "Apt 2B",
+          "city": "Columbus",
+          "state": "OH",
+          "zip": "43214",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6145559823",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "6145554471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Anthem Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes mellitus"
+        },
+        {
+          "id": "med_002",
+          "name": "Atorvastatin",
+          "dosage": "40mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-22",
+          "reason": "Hyperlipidemia and coronary artery disease"
+        },
+        {
+          "id": "med_003",
+          "name": "Aspirin",
+          "dosage": "81mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 11,
+          "last_filled": "2024-10-01",
+          "reason": "Antiplatelet therapy for coronary artery disease"
+        },
+        {
+          "id": "med_004",
+          "name": "Metoprolol Succinate",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-30",
+          "reason": "Coronary artery disease and blood pressure management"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-01-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension and cardiovascular protection in diabetes"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Coronary artery disease with type 2 diabetes and hyperlipidemia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "moderate",
+    "task_type": "health_concern_preventive_care",
+    "scenario_id": "b24980e6-a947-4b81-a68f-5149fa2f2236--arm1",
+    "has_image": "False",
+    "patient_story": "Marcus Okafor is a 54-year-old male with a known history of moderate coronary artery disease, type 2 diabetes mellitus, and hyperlipidemia, all diagnosed within the past five years following a stress test that revealed reduced myocardial perfusion during a routine workup for exertional chest tightness. He has been managed medically by his cardiologist and primary care physician, with his most recent HbA1c at 7.4% and LDL at 98 mg/dL, reflecting partial but not optimal control of his metabolic risk factors. Over the past several weeks, Marcus has noticed increased fatigue with moderate physical activity, occasional mild shortness of breath when climbing stairs, and some difficulty maintaining his recommended low-sodium, low-glycemic diet due to a demanding work schedule as a logistics manager. He strongly prefers remote consultations given his irregular work hours and limited ability to take time off, and he is reaching out today to discuss preventive strategies \u2014 including whether his current medication regimen needs adjustment, guidance on cardiac rehabilitation options available via telehealth, and how to better monitor his blood glucose and lipid trends at home. He is motivated to reduce his long-term cardiovascular risk and is particularly concerned about whether his current symptom changes warrant urgent evaluation or can be addressed through his scheduled virtual follow-up with his cardiologist.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "54",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Okafor",
+        "preferred_name": "Marc",
+        "dob": "1970-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marcus.okafor@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Ridgewood Drive",
+          "address2": "Apt 2B",
+          "city": "Columbus",
+          "state": "OH",
+          "zip": "43214",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6145559823",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "6145554471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Anthem Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes mellitus"
+        },
+        {
+          "id": "med_002",
+          "name": "Atorvastatin",
+          "dosage": "40mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-22",
+          "reason": "Hyperlipidemia and coronary artery disease"
+        },
+        {
+          "id": "med_003",
+          "name": "Aspirin",
+          "dosage": "81mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 11,
+          "last_filled": "2024-10-01",
+          "reason": "Antiplatelet therapy for coronary artery disease"
+        },
+        {
+          "id": "med_004",
+          "name": "Metoprolol Succinate",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-30",
+          "reason": "Coronary artery disease and blood pressure management"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-01-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension and cardiovascular protection in diabetes"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Coronary artery disease with type 2 diabetes and hyperlipidemia",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "moderate",
+    "task_type": "health_concern_preventive_care",
+    "scenario_id": "b24980e6-a947-4b81-a68f-5149fa2f2236--arm3",
+    "has_image": "False",
+    "patient_story": "Marcus Okafor is a 54-year-old male with a known history of moderate coronary artery disease, type 2 diabetes mellitus, and hyperlipidemia, all diagnosed within the past five years following a stress test that revealed reduced myocardial perfusion during a routine workup for exertional chest tightness. He has been managed medically by his cardiologist and primary care physician, with his most recent HbA1c at 7.4% and LDL at 98 mg/dL, reflecting partial but not optimal control of his metabolic risk factors. Over the past several weeks, Marcus has noticed increased fatigue with moderate physical activity, occasional mild shortness of breath when climbing stairs, and some difficulty maintaining his recommended low-sodium, low-glycemic diet due to a demanding work schedule as a logistics manager. He strongly prefers remote consultations given his irregular work hours and limited ability to take time off, and he is reaching out today to discuss preventive strategies \u2014 including whether his current medication regimen needs adjustment, guidance on cardiac rehabilitation options available via telehealth, and how to better monitor his blood glucose and lipid trends at home. He is motivated to reduce his long-term cardiovascular risk and is particularly concerned about whether his current symptom changes warrant urgent evaluation or can be addressed through his scheduled virtual follow-up with his cardiologist.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "54",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Okafor",
+        "preferred_name": "Marc",
+        "dob": "1970-03-14",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "marcus.okafor@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4712 Ridgewood Drive",
+          "address2": "Apt 2B",
+          "city": "Columbus",
+          "state": "OH",
+          "zip": "43214",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "6145559823",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Okafor",
+          "relationship": "spouse",
+          "phone": "6145554471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Anthem Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Metformin",
+          "dosage": "1000mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2019-06-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2024-10-05",
+          "reason": "Type 2 diabetes mellitus"
+        },
+        {
+          "id": "med_002",
+          "name": "Atorvastatin",
+          "dosage": "40mg",
+          "frequency": "once daily at bedtime",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2024-09-22",
+          "reason": "Hyperlipidemia and coronary artery disease"
+        },
+        {
+          "id": "med_003",
+          "name": "Aspirin",
+          "dosage": "81mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-02-18",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 11,
+          "last_filled": "2024-10-01",
+          "reason": "Antiplatelet therapy for coronary artery disease"
+        },
+        {
+          "id": "med_004",
+          "name": "Metoprolol Succinate",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2020-03-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 2,
+          "last_filled": "2024-09-30",
+          "reason": "Coronary artery disease and blood pressure management"
+        },
+        {
+          "id": "med_005",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-01-12",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-05",
+          "reason": "Hypertension and cardiovascular protection in diabetes"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "COPD with heart failure",
+    "preferred_care_option": "in person visit",
+    "severity_level": "severe",
+    "task_type": "health_concern_treatment_options",
+    "scenario_id": "be08484f-1b81-48e7-82c3-dc8839cb2ff2--arm0",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 14-year-old male with a rare and severe presentation of COPD secondary to a genetic connective tissue disorder diagnosed at age 8, compounded by a dilated cardiomyopathy leading to congestive heart failure confirmed in early 2024. Over the past three months, his mother has noted a significant worsening of his baseline dyspnea, with Marcus now struggling to complete a single flight of stairs without stopping, experiencing bilateral ankle swelling that has not fully resolved despite his current diuretic regimen, and reporting nighttime coughing episodes that disrupt his sleep several times per week. His mother is deeply concerned about whether his current medication regimen is still adequate and wants to understand all available treatment options \u2014 including any advanced or escalated therapies \u2014 that his pediatric pulmonologist and pediatric cardiologist might consider, and she is specifically requesting an in-person visit so that Marcus can be physically examined and so she can speak directly with the care team about the risks and benefits of each option. The family is also anxious about the long-term prognosis and whether any interventional or device-based therapies are appropriate given his age and the severity of his combined cardiopulmonary disease.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "2010-03-17",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "oyelaran.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Ridgecrest Drive",
+          "address2": "",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38118",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "mother",
+          "phone": "9018523641"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "BlueCross BlueShield of Tennessee",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Budesonide/Formoterol (Symbicort)",
+          "dosage": "80/4.5 mcg",
+          "frequency": "two inhalations twice daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-10",
+          "reason": "COPD / obstructive lung disease management"
+        },
+        {
+          "id": "med_002",
+          "name": "Albuterol Sulfate HFA",
+          "dosage": "90 mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-06-14",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-12-01",
+          "reason": "Acute bronchospasm / rescue inhaler"
+        },
+        {
+          "id": "med_003",
+          "name": "Furosemide",
+          "dosage": "20 mg",
+          "frequency": "once daily in the morning",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / fluid retention"
+        },
+        {
+          "id": "med_004",
+          "name": "Carvedilol",
+          "dosage": "3.125 mg",
+          "frequency": "twice daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / cardiac remodeling"
+        },
+        {
+          "id": "med_005",
+          "name": "Azithromycin",
+          "dosage": "250 mg",
+          "frequency": "once daily (prophylactic)",
+          "status": "past",
+          "prescribed_date": "2023-11-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-11-10",
+          "reason": "Recurrent pulmonary exacerbation prevention"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "COPD with heart failure",
+    "preferred_care_option": "in person visit",
+    "severity_level": "severe",
+    "task_type": "health_concern_treatment_options",
+    "scenario_id": "be08484f-1b81-48e7-82c3-dc8839cb2ff2--arm1",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 14-year-old male with a rare and severe presentation of COPD secondary to a genetic connective tissue disorder diagnosed at age 8, compounded by a dilated cardiomyopathy leading to congestive heart failure confirmed in early 2024. Over the past three months, his mother has noted a significant worsening of his baseline dyspnea, with Marcus now struggling to complete a single flight of stairs without stopping, experiencing bilateral ankle swelling that has not fully resolved despite his current diuretic regimen, and reporting nighttime coughing episodes that disrupt his sleep several times per week. His mother is deeply concerned about whether his current medication regimen is still adequate and wants to understand all available treatment options \u2014 including any advanced or escalated therapies \u2014 that his pediatric pulmonologist and pediatric cardiologist might consider, and she is specifically requesting an in-person visit so that Marcus can be physically examined and so she can speak directly with the care team about the risks and benefits of each option. The family is also anxious about the long-term prognosis and whether any interventional or device-based therapies are appropriate given his age and the severity of his combined cardiopulmonary disease.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "2010-03-17",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "oyelaran.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Ridgecrest Drive",
+          "address2": "",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38118",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "mother",
+          "phone": "9018523641"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "BlueCross BlueShield of Tennessee",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Budesonide/Formoterol (Symbicort)",
+          "dosage": "80/4.5 mcg",
+          "frequency": "two inhalations twice daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-10",
+          "reason": "COPD / obstructive lung disease management"
+        },
+        {
+          "id": "med_002",
+          "name": "Albuterol Sulfate HFA",
+          "dosage": "90 mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-06-14",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-12-01",
+          "reason": "Acute bronchospasm / rescue inhaler"
+        },
+        {
+          "id": "med_003",
+          "name": "Furosemide",
+          "dosage": "20 mg",
+          "frequency": "once daily in the morning",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / fluid retention"
+        },
+        {
+          "id": "med_004",
+          "name": "Carvedilol",
+          "dosage": "3.125 mg",
+          "frequency": "twice daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / cardiac remodeling"
+        },
+        {
+          "id": "med_005",
+          "name": "Azithromycin",
+          "dosage": "250 mg",
+          "frequency": "once daily (prophylactic)",
+          "status": "past",
+          "prescribed_date": "2023-11-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-11-10",
+          "reason": "Recurrent pulmonary exacerbation prevention"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "COPD with heart failure",
+    "preferred_care_option": "in person visit",
+    "severity_level": "severe",
+    "task_type": "health_concern_treatment_options",
+    "scenario_id": "be08484f-1b81-48e7-82c3-dc8839cb2ff2--arm3",
+    "has_image": "False",
+    "patient_story": "Marcus Oyelaran is a 14-year-old male with a rare and severe presentation of COPD secondary to a genetic connective tissue disorder diagnosed at age 8, compounded by a dilated cardiomyopathy leading to congestive heart failure confirmed in early 2024. Over the past three months, his mother has noted a significant worsening of his baseline dyspnea, with Marcus now struggling to complete a single flight of stairs without stopping, experiencing bilateral ankle swelling that has not fully resolved despite his current diuretic regimen, and reporting nighttime coughing episodes that disrupt his sleep several times per week. His mother is deeply concerned about whether his current medication regimen is still adequate and wants to understand all available treatment options \u2014 including any advanced or escalated therapies \u2014 that his pediatric pulmonologist and pediatric cardiologist might consider, and she is specifically requesting an in-person visit so that Marcus can be physically examined and so she can speak directly with the care team about the risks and benefits of each option. The family is also anxious about the long-term prognosis and whether any interventional or device-based therapies are appropriate given his age and the severity of his combined cardiopulmonary disease.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "14",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marcus",
+        "last_name": "Oyelaran",
+        "preferred_name": "Marc",
+        "dob": "2010-03-17",
+        "sex": "male",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "oyelaran.family@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Ridgecrest Drive",
+          "address2": "",
+          "city": "Memphis",
+          "state": "TN",
+          "zip": "38118",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "9013847265",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Adaeze",
+          "last_name": "Oyelaran",
+          "relationship": "mother",
+          "phone": "9018523641"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "BlueCross BlueShield of Tennessee",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Budesonide/Formoterol (Symbicort)",
+          "dosage": "80/4.5 mcg",
+          "frequency": "two inhalations twice daily",
+          "status": "active",
+          "prescribed_date": "2023-09-05",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-10",
+          "reason": "COPD / obstructive lung disease management"
+        },
+        {
+          "id": "med_002",
+          "name": "Albuterol Sulfate HFA",
+          "dosage": "90 mcg/actuation",
+          "frequency": "as needed (up to every 4-6 hours)",
+          "status": "active",
+          "prescribed_date": "2022-06-14",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2024-12-01",
+          "reason": "Acute bronchospasm / rescue inhaler"
+        },
+        {
+          "id": "med_003",
+          "name": "Furosemide",
+          "dosage": "20 mg",
+          "frequency": "once daily in the morning",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / fluid retention"
+        },
+        {
+          "id": "med_004",
+          "name": "Carvedilol",
+          "dosage": "3.125 mg",
+          "frequency": "twice daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-01-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2024-11-22",
+          "reason": "Heart failure / cardiac remodeling"
+        },
+        {
+          "id": "med_005",
+          "name": "Azithromycin",
+          "dosage": "250 mg",
+          "frequency": "once daily (prophylactic)",
+          "status": "past",
+          "prescribed_date": "2023-11-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2023-11-10",
+          "reason": "Recurrent pulmonary exacerbation prevention"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "complicated",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Kidney stones",
+    "preferred_care_option": "no preference",
+    "severity_level": "severe",
+    "task_type": "health_concern_lifestyle_management",
+    "scenario_id": "dfc6bbd4-05c6-4fc8-9389-6f1cad2d95e5--arm0",
+    "has_image": "False",
+    "patient_story": "Ren Okonkwo is a 47-year-old transgender male presenting with a recurrent and currently severe episode of nephrolithiasis, having been diagnosed with a 7mm calcium oxalate stone in the right ureter confirmed by CT scan approximately two weeks ago following an emergency department visit for excruciating flank pain, hematuria, and intractable nausea. This is his second significant stone episode within the past three months, and his urologist has expressed concern about the high recurrence rate, recommending aggressive dietary and lifestyle modifications in addition to the ongoing medical regimen. Ren works a sedentary desk job in software development and admits to chronically low fluid intake, a diet high in sodium and animal protein, and minimal physical activity, all of which his care team has identified as major contributing risk factors. He is now seeking guidance on practical lifestyle changes \u2014 including dietary adjustments, hydration strategies, and exercise habits \u2014 that can realistically fit into his demanding work schedule and help prevent future stone formation. Ren has no strong preference regarding the type of provider he works with and is motivated to make sustainable changes, though he has expressed frustration and anxiety about the severity of his symptoms and the impact on his quality of life.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "47",
+        "timezone": "America/Denver"
+      },
+      "personal_info": {
+        "first_name": "Renata",
+        "last_name": "Okonkwo",
+        "preferred_name": "Ren",
+        "dob": "1977-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "ren.okonkwo@mailhub.net"
+      },
+      "addresses": {
+        "address": {
+          "address1": "2814 Cottonwood Lane",
+          "address2": "Apt 6B",
+          "city": "Albuquerque",
+          "state": "NM",
+          "zip": "87106",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5053847291",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Darius",
+          "last_name": "Okonkwo",
+          "relationship": "spouse",
+          "phone": "5053920184"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Tamsulosin",
+          "dosage": "0.4mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-03",
+          "reason": "Kidney stone passage facilitation"
+        },
+        {
+          "id": "med_002",
+          "name": "Ketorolac",
+          "dosage": "10mg",
+          "frequency": "every 6 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-11-03",
+          "reason": "Acute pain management for kidney stones"
+        },
+        {
+          "id": "med_003",
+          "name": "Ondansetron",
+          "dosage": "4mg",
+          "frequency": "every 8 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-11-03",
+          "reason": "Nausea associated with kidney stones"
+        },
+        {
+          "id": "med_004",
+          "name": "Potassium Citrate",
+          "dosage": "10mEq",
+          "frequency": "three times daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-09-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-20",
+          "reason": "Prevention of recurrent calcium oxalate kidney stones"
+        },
+        {
+          "id": "med_005",
+          "name": "Hydrocodone-Acetaminophen",
+          "dosage": "5-325mg",
+          "frequency": "every 4-6 hours as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-10",
+          "reason": "Severe pain during prior kidney stone episode"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Kidney stones",
+    "preferred_care_option": "no preference",
+    "severity_level": "severe",
+    "task_type": "health_concern_lifestyle_management",
+    "scenario_id": "dfc6bbd4-05c6-4fc8-9389-6f1cad2d95e5--arm1",
+    "has_image": "False",
+    "patient_story": "Ren Okonkwo is a 47-year-old transgender male presenting with a recurrent and currently severe episode of nephrolithiasis, having been diagnosed with a 7mm calcium oxalate stone in the right ureter confirmed by CT scan approximately two weeks ago following an emergency department visit for excruciating flank pain, hematuria, and intractable nausea. This is his second significant stone episode within the past three months, and his urologist has expressed concern about the high recurrence rate, recommending aggressive dietary and lifestyle modifications in addition to the ongoing medical regimen. Ren works a sedentary desk job in software development and admits to chronically low fluid intake, a diet high in sodium and animal protein, and minimal physical activity, all of which his care team has identified as major contributing risk factors. He is now seeking guidance on practical lifestyle changes \u2014 including dietary adjustments, hydration strategies, and exercise habits \u2014 that can realistically fit into his demanding work schedule and help prevent future stone formation. Ren has no strong preference regarding the type of provider he works with and is motivated to make sustainable changes, though he has expressed frustration and anxiety about the severity of his symptoms and the impact on his quality of life.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "47",
+        "timezone": "America/Denver"
+      },
+      "personal_info": {
+        "first_name": "Renata",
+        "last_name": "Okonkwo",
+        "preferred_name": "Ren",
+        "dob": "1977-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "ren.okonkwo@mailhub.net"
+      },
+      "addresses": {
+        "address": {
+          "address1": "2814 Cottonwood Lane",
+          "address2": "Apt 6B",
+          "city": "Albuquerque",
+          "state": "NM",
+          "zip": "87106",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5053847291",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Darius",
+          "last_name": "Okonkwo",
+          "relationship": "spouse",
+          "phone": "5053920184"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Tamsulosin",
+          "dosage": "0.4mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-03",
+          "reason": "Kidney stone passage facilitation"
+        },
+        {
+          "id": "med_002",
+          "name": "Ketorolac",
+          "dosage": "10mg",
+          "frequency": "every 6 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-11-03",
+          "reason": "Acute pain management for kidney stones"
+        },
+        {
+          "id": "med_003",
+          "name": "Ondansetron",
+          "dosage": "4mg",
+          "frequency": "every 8 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-11-03",
+          "reason": "Nausea associated with kidney stones"
+        },
+        {
+          "id": "med_004",
+          "name": "Potassium Citrate",
+          "dosage": "10mEq",
+          "frequency": "three times daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-09-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-20",
+          "reason": "Prevention of recurrent calcium oxalate kidney stones"
+        },
+        {
+          "id": "med_005",
+          "name": "Hydrocodone-Acetaminophen",
+          "dosage": "5-325mg",
+          "frequency": "every 4-6 hours as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-10",
+          "reason": "Severe pain during prior kidney stone episode"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Kidney stones",
+    "preferred_care_option": "no preference",
+    "severity_level": "severe",
+    "task_type": "health_concern_lifestyle_management",
+    "scenario_id": "dfc6bbd4-05c6-4fc8-9389-6f1cad2d95e5--arm3",
+    "has_image": "False",
+    "patient_story": "Ren Okonkwo is a 47-year-old transgender male presenting with a recurrent and currently severe episode of nephrolithiasis, having been diagnosed with a 7mm calcium oxalate stone in the right ureter confirmed by CT scan approximately two weeks ago following an emergency department visit for excruciating flank pain, hematuria, and intractable nausea. This is his second significant stone episode within the past three months, and his urologist has expressed concern about the high recurrence rate, recommending aggressive dietary and lifestyle modifications in addition to the ongoing medical regimen. Ren works a sedentary desk job in software development and admits to chronically low fluid intake, a diet high in sodium and animal protein, and minimal physical activity, all of which his care team has identified as major contributing risk factors. He is now seeking guidance on practical lifestyle changes \u2014 including dietary adjustments, hydration strategies, and exercise habits \u2014 that can realistically fit into his demanding work schedule and help prevent future stone formation. Ren has no strong preference regarding the type of provider he works with and is motivated to make sustainable changes, though he has expressed frustration and anxiety about the severity of his symptoms and the impact on his quality of life.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "47",
+        "timezone": "America/Denver"
+      },
+      "personal_info": {
+        "first_name": "Renata",
+        "last_name": "Okonkwo",
+        "preferred_name": "Ren",
+        "dob": "1977-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "ren.okonkwo@mailhub.net"
+      },
+      "addresses": {
+        "address": {
+          "address1": "2814 Cottonwood Lane",
+          "address2": "Apt 6B",
+          "city": "Albuquerque",
+          "state": "NM",
+          "zip": "87106",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "5053847291",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Darius",
+          "last_name": "Okonkwo",
+          "relationship": "spouse",
+          "phone": "5053920184"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Tamsulosin",
+          "dosage": "0.4mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 2,
+          "last_filled": "2024-11-03",
+          "reason": "Kidney stone passage facilitation"
+        },
+        {
+          "id": "med_002",
+          "name": "Ketorolac",
+          "dosage": "10mg",
+          "frequency": "every 6 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-11-03",
+          "reason": "Acute pain management for kidney stones"
+        },
+        {
+          "id": "med_003",
+          "name": "Ondansetron",
+          "dosage": "4mg",
+          "frequency": "every 8 hours as needed",
+          "status": "active",
+          "prescribed_date": "2024-11-02",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 1,
+          "last_filled": "2024-11-03",
+          "reason": "Nausea associated with kidney stones"
+        },
+        {
+          "id": "med_004",
+          "name": "Potassium Citrate",
+          "dosage": "10mEq",
+          "frequency": "three times daily with meals",
+          "status": "active",
+          "prescribed_date": "2024-09-15",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 4,
+          "last_filled": "2024-10-20",
+          "reason": "Prevention of recurrent calcium oxalate kidney stones"
+        },
+        {
+          "id": "med_005",
+          "name": "Hydrocodone-Acetaminophen",
+          "dosage": "5-325mg",
+          "frequency": "every 4-6 hours as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-09-10",
+          "reason": "Severe pain during prior kidney stone episode"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Liver cirrhosis with portal hypertension",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "e0bc28b1-30ff-45f2-b29b-8770a9b6ea70--arm0",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes, a 27-year-old transgender male residing in Houston, Texas, was diagnosed with mild liver cirrhosis and portal hypertension approximately 18 months ago following workup for elevated liver enzymes discovered incidentally during a routine physical. He has been managed by his hepatologist with propranolol and spironolactone and has remained relatively stable, though he reports increasing episodes of right upper quadrant and diffuse abdominal discomfort over the past three weeks that he describes as a dull, aching pressure rated 4-5 out of 10, occasionally worsening after meals. He is reaching out today via remote consultation because he is concerned about what pain medications are safe for him to take given his liver condition, noting that he previously took ibuprofen before his diagnosis and was told to stop, and he is unsure whether his current low-dose acetaminophen regimen is adequate or if there are other options his care team can recommend. He works a demanding schedule as a graphic designer and prefers telehealth visits to avoid taking time off work, and he is particularly anxious about whether this new pattern of pain could signal worsening of his cirrhosis or a complication related to his portal hypertension. He has not experienced any signs of acute decompensation such as jaundice, ascites, or hematemesis, but wants guidance from his provider before his next scheduled in-person follow-up in two months.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westheimer Rd",
+          "address2": "Apt 206",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77027",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "7135559284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "7135558471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Propranolol",
+          "dosage": "20mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-05-01",
+          "reason": "Portal hypertension - reduction of variceal bleeding risk"
+        },
+        {
+          "id": "med_002",
+          "name": "Spironolactone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2025-05-01",
+          "reason": "Fluid retention management in liver cirrhosis"
+        },
+        {
+          "id": "med_003",
+          "name": "Lactulose",
+          "dosage": "20g/30mL",
+          "frequency": "twice daily as needed",
+          "status": "active",
+          "prescribed_date": "2024-02-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-04-15",
+          "reason": "Prevention of hepatic encephalopathy"
+        },
+        {
+          "id": "med_004",
+          "name": "Acetaminophen",
+          "dosage": "325mg",
+          "frequency": "as needed, max 2g/day",
+          "status": "active",
+          "prescribed_date": "2024-03-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-03-10",
+          "reason": "Mild pain management - approved for hepatic patients"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-06-15",
+          "reason": "Pain management - discontinued due to hepatic contraindication"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Liver cirrhosis with portal hypertension",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "e0bc28b1-30ff-45f2-b29b-8770a9b6ea70--arm1",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes, a 27-year-old transgender male residing in Houston, Texas, was diagnosed with mild liver cirrhosis and portal hypertension approximately 18 months ago following workup for elevated liver enzymes discovered incidentally during a routine physical. He has been managed by his hepatologist with propranolol and spironolactone and has remained relatively stable, though he reports increasing episodes of right upper quadrant and diffuse abdominal discomfort over the past three weeks that he describes as a dull, aching pressure rated 4-5 out of 10, occasionally worsening after meals. He is reaching out today via remote consultation because he is concerned about what pain medications are safe for him to take given his liver condition, noting that he previously took ibuprofen before his diagnosis and was told to stop, and he is unsure whether his current low-dose acetaminophen regimen is adequate or if there are other options his care team can recommend. He works a demanding schedule as a graphic designer and prefers telehealth visits to avoid taking time off work, and he is particularly anxious about whether this new pattern of pain could signal worsening of his cirrhosis or a complication related to his portal hypertension. He has not experienced any signs of acute decompensation such as jaundice, ascites, or hematemesis, but wants guidance from his provider before his next scheduled in-person follow-up in two months.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westheimer Rd",
+          "address2": "Apt 206",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77027",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "7135559284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "7135558471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Propranolol",
+          "dosage": "20mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-05-01",
+          "reason": "Portal hypertension - reduction of variceal bleeding risk"
+        },
+        {
+          "id": "med_002",
+          "name": "Spironolactone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2025-05-01",
+          "reason": "Fluid retention management in liver cirrhosis"
+        },
+        {
+          "id": "med_003",
+          "name": "Lactulose",
+          "dosage": "20g/30mL",
+          "frequency": "twice daily as needed",
+          "status": "active",
+          "prescribed_date": "2024-02-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-04-15",
+          "reason": "Prevention of hepatic encephalopathy"
+        },
+        {
+          "id": "med_004",
+          "name": "Acetaminophen",
+          "dosage": "325mg",
+          "frequency": "as needed, max 2g/day",
+          "status": "active",
+          "prescribed_date": "2024-03-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-03-10",
+          "reason": "Mild pain management - approved for hepatic patients"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-06-15",
+          "reason": "Pain management - discontinued due to hepatic contraindication"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Liver cirrhosis with portal hypertension",
+    "preferred_care_option": "remote consultation",
+    "severity_level": "mild",
+    "task_type": "health_concern_pain_management",
+    "scenario_id": "e0bc28b1-30ff-45f2-b29b-8770a9b6ea70--arm3",
+    "has_image": "False",
+    "patient_story": "Marisol Vega-Reyes, a 27-year-old transgender male residing in Houston, Texas, was diagnosed with mild liver cirrhosis and portal hypertension approximately 18 months ago following workup for elevated liver enzymes discovered incidentally during a routine physical. He has been managed by his hepatologist with propranolol and spironolactone and has remained relatively stable, though he reports increasing episodes of right upper quadrant and diffuse abdominal discomfort over the past three weeks that he describes as a dull, aching pressure rated 4-5 out of 10, occasionally worsening after meals. He is reaching out today via remote consultation because he is concerned about what pain medications are safe for him to take given his liver condition, noting that he previously took ibuprofen before his diagnosis and was told to stop, and he is unsure whether his current low-dose acetaminophen regimen is adequate or if there are other options his care team can recommend. He works a demanding schedule as a graphic designer and prefers telehealth visits to avoid taking time off work, and he is particularly anxious about whether this new pattern of pain could signal worsening of his cirrhosis or a complication related to his portal hypertension. He has not experienced any signs of acute decompensation such as jaundice, ascites, or hematemesis, but wants guidance from his provider before his next scheduled in-person follow-up in two months.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "27",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Marisol",
+        "last_name": "Vega-Reyes",
+        "preferred_name": "Mari",
+        "dob": "1997-03-14",
+        "sex": "female",
+        "gender": "male",
+        "pronouns": "he/him",
+        "email": "mari.vegareyes@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4812 Westheimer Rd",
+          "address2": "Apt 206",
+          "city": "Houston",
+          "state": "TX",
+          "zip": "77027",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "7135559284",
+          "kind": "mobile",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Lucia",
+          "last_name": "Vega",
+          "relationship": "mother",
+          "phone": "7135558471"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Blue Cross Blue Shield of Texas",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Propranolol",
+          "dosage": "20mg",
+          "frequency": "twice daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 5,
+          "last_filled": "2025-05-01",
+          "reason": "Portal hypertension - reduction of variceal bleeding risk"
+        },
+        {
+          "id": "med_002",
+          "name": "Spironolactone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-01-10",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 4,
+          "last_filled": "2025-05-01",
+          "reason": "Fluid retention management in liver cirrhosis"
+        },
+        {
+          "id": "med_003",
+          "name": "Lactulose",
+          "dosage": "20g/30mL",
+          "frequency": "twice daily as needed",
+          "status": "active",
+          "prescribed_date": "2024-02-05",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 3,
+          "last_filled": "2025-04-15",
+          "reason": "Prevention of hepatic encephalopathy"
+        },
+        {
+          "id": "med_004",
+          "name": "Acetaminophen",
+          "dosage": "325mg",
+          "frequency": "as needed, max 2g/day",
+          "status": "active",
+          "prescribed_date": "2024-03-20",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 6,
+          "last_filled": "2025-03-10",
+          "reason": "Mild pain management - approved for hepatic patients"
+        },
+        {
+          "id": "med_005",
+          "name": "Ibuprofen",
+          "dosage": "400mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2023-06-01",
+          "pharmacy": "CVS Pharmacy",
+          "refills_remaining": 0,
+          "last_filled": "2023-06-15",
+          "reason": "Pain management - discontinued due to hepatic contraindication"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=high"
+  },
+  {
+    "condition_name": "Substance use disorder",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "provider_access_schedule",
+    "scenario_id": "f9029aec-ec04-48ef-8560-ece1a576bbae--arm0",
+    "has_image": "False",
+    "patient_story": "Loretta Beaumont is a 71-year-old retired schoolteacher from Baton Rouge, Louisiana, who was identified approximately eight months ago by her primary care physician as having a mild alcohol use disorder following a candid conversation during a routine wellness visit, at which point she disclosed consuming four to five glasses of wine nightly over the preceding two years, a habit she attributed to loneliness and disrupted sleep after her husband's passing in 2022. She was started on naltrexone and thiamine supplementation and has since reduced her alcohol intake significantly, now reporting one to two drinks on most evenings with several alcohol-free days per week, which she considers a meaningful improvement but acknowledges she still struggles with evening cravings and occasional low mood. Loretta is now seeking to schedule an in-person follow-up appointment with her addiction medicine specialist or her primary care provider to review her progress, discuss whether her current medication regimen remains appropriate, and explore whether structured outpatient counseling or a senior-focused support group might be a beneficial addition to her care plan. She strongly prefers face-to-face visits, expressing that she finds it difficult to communicate her emotional concerns over video or phone calls and values the personal connection of seeing her care team in person. Her daughter Diane, who lives nearby, is supportive of her treatment and occasionally accompanies her to appointments.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "71",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Loretta",
+        "last_name": "Beaumont",
+        "preferred_name": "Lori",
+        "dob": "1953-04-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "lori.beaumont53@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4218 Magnolia Creek Drive",
+          "address2": "",
+          "city": "Baton Rouge",
+          "state": "LA",
+          "zip": "70808",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2253847612",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Diane",
+          "last_name": "Beaumont",
+          "relationship": "daughter",
+          "phone": "2254019873"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naltrexone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2025-02-10",
+          "reason": "Alcohol use disorder - craving reduction"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-15",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Thiamine (Vitamin B1)",
+          "dosage": "100mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2025-02-10",
+          "reason": "Nutritional supplementation related to alcohol use"
+        },
+        {
+          "id": "med_004",
+          "name": "Lorazepam",
+          "dosage": "0.5mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-10-01",
+          "reason": "Short-term management of alcohol withdrawal anxiety"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "confused"
+  },
+  {
+    "condition_name": "Substance use disorder",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "provider_access_schedule",
+    "scenario_id": "f9029aec-ec04-48ef-8560-ece1a576bbae--arm1",
+    "has_image": "False",
+    "patient_story": "Loretta Beaumont is a 71-year-old retired schoolteacher from Baton Rouge, Louisiana, who was identified approximately eight months ago by her primary care physician as having a mild alcohol use disorder following a candid conversation during a routine wellness visit, at which point she disclosed consuming four to five glasses of wine nightly over the preceding two years, a habit she attributed to loneliness and disrupted sleep after her husband's passing in 2022. She was started on naltrexone and thiamine supplementation and has since reduced her alcohol intake significantly, now reporting one to two drinks on most evenings with several alcohol-free days per week, which she considers a meaningful improvement but acknowledges she still struggles with evening cravings and occasional low mood. Loretta is now seeking to schedule an in-person follow-up appointment with her addiction medicine specialist or her primary care provider to review her progress, discuss whether her current medication regimen remains appropriate, and explore whether structured outpatient counseling or a senior-focused support group might be a beneficial addition to her care plan. She strongly prefers face-to-face visits, expressing that she finds it difficult to communicate her emotional concerns over video or phone calls and values the personal connection of seeing her care team in person. Her daughter Diane, who lives nearby, is supportive of her treatment and occasionally accompanies her to appointments.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "71",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Loretta",
+        "last_name": "Beaumont",
+        "preferred_name": "Lori",
+        "dob": "1953-04-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "lori.beaumont53@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4218 Magnolia Creek Drive",
+          "address2": "",
+          "city": "Baton Rouge",
+          "state": "LA",
+          "zip": "70808",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2253847612",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Diane",
+          "last_name": "Beaumont",
+          "relationship": "daughter",
+          "phone": "2254019873"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naltrexone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2025-02-10",
+          "reason": "Alcohol use disorder - craving reduction"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-15",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Thiamine (Vitamin B1)",
+          "dosage": "100mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2025-02-10",
+          "reason": "Nutritional supplementation related to alcohol use"
+        },
+        {
+          "id": "med_004",
+          "name": "Lorazepam",
+          "dosage": "0.5mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-10-01",
+          "reason": "Short-term management of alcohol withdrawal anxiety"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=low"
+  },
+  {
+    "condition_name": "Substance use disorder",
+    "preferred_care_option": "in person visit",
+    "severity_level": "mild",
+    "task_type": "provider_access_schedule",
+    "scenario_id": "f9029aec-ec04-48ef-8560-ece1a576bbae--arm3",
+    "has_image": "False",
+    "patient_story": "Loretta Beaumont is a 71-year-old retired schoolteacher from Baton Rouge, Louisiana, who was identified approximately eight months ago by her primary care physician as having a mild alcohol use disorder following a candid conversation during a routine wellness visit, at which point she disclosed consuming four to five glasses of wine nightly over the preceding two years, a habit she attributed to loneliness and disrupted sleep after her husband's passing in 2022. She was started on naltrexone and thiamine supplementation and has since reduced her alcohol intake significantly, now reporting one to two drinks on most evenings with several alcohol-free days per week, which she considers a meaningful improvement but acknowledges she still struggles with evening cravings and occasional low mood. Loretta is now seeking to schedule an in-person follow-up appointment with her addiction medicine specialist or her primary care provider to review her progress, discuss whether her current medication regimen remains appropriate, and explore whether structured outpatient counseling or a senior-focused support group might be a beneficial addition to her care plan. She strongly prefers face-to-face visits, expressing that she finds it difficult to communicate her emotional concerns over video or phone calls and values the personal connection of seeing her care team in person. Her daughter Diane, who lives nearby, is supportive of her treatment and occasionally accompanies her to appointments.",
+    "patient_profile": {
+      "account_info": {
+        "age_in_years": "71",
+        "timezone": "America/Chicago"
+      },
+      "personal_info": {
+        "first_name": "Loretta",
+        "last_name": "Beaumont",
+        "preferred_name": "Lori",
+        "dob": "1953-04-14",
+        "sex": "female",
+        "gender": "female",
+        "pronouns": "she/her",
+        "email": "lori.beaumont53@gmail.com"
+      },
+      "addresses": {
+        "address": {
+          "address1": "4218 Magnolia Creek Drive",
+          "address2": "",
+          "city": "Baton Rouge",
+          "state": "LA",
+          "zip": "70808",
+          "is_preferred": "true"
+        }
+      },
+      "phone_numbers": {
+        "phone": {
+          "number": "2253847612",
+          "kind": "home",
+          "is_preferred": "true",
+          "extension": ""
+        }
+      },
+      "emergency_contacts": {
+        "contact": {
+          "first_name": "Diane",
+          "last_name": "Beaumont",
+          "relationship": "daughter",
+          "phone": "2254019873"
+        }
+      },
+      "insurances": {
+        "insurance": {
+          "name": "Medicare",
+          "plan_type": "PPO"
+        }
+      },
+      "pharmacies": {},
+      "medications": [
+        {
+          "id": "med_001",
+          "name": "Naltrexone",
+          "dosage": "50mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 3,
+          "last_filled": "2025-02-10",
+          "reason": "Alcohol use disorder - craving reduction"
+        },
+        {
+          "id": "med_002",
+          "name": "Lisinopril",
+          "dosage": "10mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2021-03-22",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 6,
+          "last_filled": "2025-01-15",
+          "reason": "Hypertension"
+        },
+        {
+          "id": "med_003",
+          "name": "Thiamine (Vitamin B1)",
+          "dosage": "100mg",
+          "frequency": "once daily",
+          "status": "active",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 5,
+          "last_filled": "2025-02-10",
+          "reason": "Nutritional supplementation related to alcohol use"
+        },
+        {
+          "id": "med_004",
+          "name": "Lorazepam",
+          "dosage": "0.5mg",
+          "frequency": "as needed",
+          "status": "past",
+          "prescribed_date": "2024-09-10",
+          "pharmacy": "Walgreens",
+          "refills_remaining": 0,
+          "last_filled": "2024-10-01",
+          "reason": "Short-term management of alcohol withdrawal anxiety"
+        }
+      ],
+      "care_team": {}
+    },
+    "scenario_complexity": "chronic",
+    "personality": "pw:base=confused;health_literacy=high"
+  }
+]

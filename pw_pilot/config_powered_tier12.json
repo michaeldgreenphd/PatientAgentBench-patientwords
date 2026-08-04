@@ -1,0 +1,77 @@
+{
+  "_readme": "PAB literacy sweep, powered run. 3 arms (preset control + low + high health literacy) x 13 cases. Patient and sandbox held FIXED and byte-identical to every prior run so the halves pool. Assistants ordered most expensive first: generation is sequential and budget_guard aborts hard, so a ceiling trip loses the cheap tail, which is also the cheap tail to re-run. Tier 1 (Kimi, DeepSeek) has NO published PAB triage baseline -- those are new points, not comparisons.",
+  "max_turns": 3,
+  "strip_thinking_content": true,
+  "aggregation_method": "average",
+  "assistant_agent": [
+    {
+      "model": {
+        "model": "openrouter:moonshotai/kimi-k2.5"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Kimi K2.5 [tier1 advice-arm link; NO PAB baseline]"
+    },
+    {
+      "model": {
+        "model": "openrouter:google/gemini-3-flash-preview"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Gemini 3 Flash [tier2 PAB baseline 3.78/3.03/60%]"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-235b-a22b-2507"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 235B [tier2 PAB baseline 3.40/2.55/32%]"
+    },
+    {
+      "model": {
+        "model": "openrouter:deepseek/deepseek-v4-flash"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "DeepSeek V4 Flash [tier1 advice-arm link; NO PAB baseline]"
+    },
+    {
+      "model": {
+        "model": "openrouter:qwen/qwen3-next-80b-a3b-instruct"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "Qwen3 Next 80B [tier2 PAB baseline 3.10/2.56/32%]"
+    },
+    {
+      "model": {
+        "model": "openrouter:openai/gpt-oss-120b"
+      },
+      "prompt": "default_prompt",
+      "agent_class": "default",
+      "label": "GPT-OSS-120B [tier2 PAB baseline 3.45/2.78/46%]"
+    }
+  ],
+  "user_agent": {
+    "model": {
+      "model": "openrouter:x-ai/grok-4.3"
+    },
+    "prompt": "default_prompt",
+    "agent_class": "pw_free_trait"
+  },
+  "evaluator_model": [
+    {
+      "model": "pw:claude-opus-4.8-api"
+    }
+  ],
+  "sandbox_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "seed_generator_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  },
+  "analyzer_model": {
+    "model": "openrouter:openai/gpt-5.4-mini"
+  }
+}

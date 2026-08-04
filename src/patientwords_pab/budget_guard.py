@@ -67,6 +67,12 @@ REPORT_ENV = "PW_SPEND_REPORT"
 #: Env var opting out of the unpriced-model refusal. Any non-empty value.
 ALLOW_UNPRICED_ENV = "PW_ALLOW_UNPRICED"
 
+#: Env var naming a file rewritten as the run proceeds. It exists so an observer
+#: outside the job can tell "working" from "dead": a run that has stopped stops
+#: updating it, and absence of change is then evidence of absence rather than
+#: something to be read as progress.
+PROGRESS_ENV = "PW_PROGRESS_FILE"
+
 COST_BASIS = "registry list prices x reported token usage; not the provider's invoice"
 
 
@@ -131,9 +137,11 @@ class SpendGuard:
     per_model: Dict[str, ModelUsage] = field(default_factory=dict)
     tripped: bool = False
     unpriced: List[str] = field(default_factory=list)
+    progress_path: Optional[Path] = None
     _lock: threading.Lock = field(default_factory=threading.Lock, repr=False)
 
     def __post_init__(self) -> None:
+        self._progress_path = Path(self.progress_path) if self.progress_path else None
         if self.ceiling_usd <= 0:
             raise BudgetGuardError(
                 f"ceiling must be > 0, got {self.ceiling_usd!r}; a run with no "
@@ -166,6 +174,36 @@ class SpendGuard:
     def record(self, model: str, usage: Optional[Dict[str, Any]]) -> None:
         with self._lock:
             self.per_model.setdefault(model, ModelUsage(model=model)).add(usage)
+        self.emit_progress()
+
+    def emit_progress(self) -> None:
+        """Rewrite the progress file, if one was named. Never raises.
+
+        The point is liveness, not accounting: an observer outside the job reads
+        this to distinguish "still working" from "died twenty minutes ago", and
+        a run that has stopped stops updating it. A failure to write must not be
+        able to kill a paid run, so every error is swallowed -- a missing
+        heartbeat degrades to "unknown", which is the correct reading anyway.
+        """
+        if self._progress_path is None:
+            return
+        try:
+            with self._lock:
+                calls = sum(u.calls for u in self.per_model.values())
+                models = len(self.per_model)
+            payload = {
+                "utc": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+                "cost_usd": self.total(),
+                "ceiling_usd": self.ceiling_usd,
+                "calls": calls,
+                "models_seen": models,
+                "tripped": self.tripped,
+            }
+            tmp = self._progress_path.with_suffix(".tmp")
+            tmp.write_text(json.dumps(payload), encoding="utf-8")
+            tmp.replace(self._progress_path)   # atomic: a reader never sees half a file
+        except Exception:  # noqa: BLE001 - liveness reporting must never break the run
+            pass
 
     def total(self) -> float:
         """Cost of the priced legs. Unpriced legs contribute nothing.
@@ -352,9 +390,11 @@ def guard_from_env() -> Optional[SpendGuard]:
         raise BudgetGuardError(
             f"{MAX_SPEND_ENV}={raw!r} is not a number; refusing to run unbounded"
         ) from exc
+    progress = os.environ.get(PROGRESS_ENV, "").strip()
     return SpendGuard(
         ceiling_usd=ceiling,
         allow_unpriced=bool(os.environ.get(ALLOW_UNPRICED_ENV, "").strip()),
+        progress_path=Path(progress) if progress else None,
     )
 
 
